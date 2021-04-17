@@ -1,0 +1,31 @@
+Aula 17-04-2021
+
+Apresentar o software funcionando
+Interação (Crum, cronograma)
+Narrado (um integrante)
+
+Se o autor é a herança, utilizar flechas
+
+Comentários
+===========
+Inserir Multiplicidades
+um mesmo usuário tem qantos endereços?
+Inverter a seta Usuário-Cliente
+Funcionário também herda de usuário
+Importante saber qual funcionário realiza a revisão
+(Ligar 1 funcionário a revisão)
+"As classes me parecem coerentes"
+Texto associado a cada classe, descrevendo o papel 
+da classe/entidade dentro do sistema
+Entidade/funcionário tem um papel definido no sistema
+Melhor escrever à parte.
+Classe Locação: Inserir Retirada/Devolução
+Usar a representação do triângulo ao invés do losango
+Usuário seria o genérico: Parte para gerente, funcionário, cliente
+Modelo lógico: Campos, tipos, dados
+Forma de tabela, retângulo. Chaves, tipos. O diagrama é gerado a partir do proprio
+modelo BR. Cuidado se gerar como está, tirar as FKs, senão vai duplicar.
+
+Entregar doc atulizado
+Diagrama de classes
+Modelo do banco
