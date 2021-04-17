@@ -1,0 +1,13 @@
+
+========================== PI | 17-04-2021
+
+locacao (home page)
+	locacao ou cadastro
+frotas
+	locacao ou cadastro
+clientes
+	cadastro
+veiculos
+	cadastro
+
+
