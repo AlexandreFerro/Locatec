@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title>Locatec</title>
+  
+  <!-- Meta tags Obrigatórias -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel = "stylesheet" href = "css/style.css">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+<!-------Cabeçalho--------->
+<div class="container-fluid">
+  <h1 id="title"> <font face="Tempus Sans ITC"> <b> Locatec </b></h1>
+</div>  
+
+<!-------Ficheiro------------->
+
+
+     <div class=tabs>
+     <div id=tab1> <a href="#tab1">Locação</a>
+     <div><center><H4>Alugar</H4>
+	  <label>Local</label><input type="text" name="local" id="local">
+	  <label>Data e Hora Retirada</label><input type="date" name="datahoraretira" id="datahoraretira">
+	  <label>Data e Hora Devolução</label><input type="date" name="datahoradevolucao" id="datahoradevolucao">
+	  <input type="submit" value="buscar" name="buscar" id="buscar"><br></div></div>
+	
+  
+
+     
+	<div id=tab2> <a href="#tab2">Frotas</a>
+      <div>Gol - Saveiro - Van</div>
+     </div>
+
+     <div id=tab3> <a href="#tab3">Clientes</a>
+      <div>Cadastro de Clientes</div>
+     </div>
+
+     <div id=default2> <a href="#default2">Veículos</a>
+      <div>Cadastro de Veículos</div>
+     </div>
+     </div>
+     </div>
+      
+     
+      </div>
+
+    
+      
+   
+
+<!-------Login------------->
+
+<div class="content">
+           
+            <nav>
+            <ul class="nav justify-content-center" role="navigation">
+            
+	    <li class="nav-item">
+	    <nav class="navbar navbar">
+            <a class="nav-link active" href="login.html" id="login">Login</a>
+	    <a class="nav-link active" href="cadastro.html" id="cadastro">Cadastro</a>
+	    </li>
+                
+            </ul>
+            </nav>  
+
+</div>
+  
+
+<!--Carrousel-->
+ <style>
+  /* Make the image fully responsive */
+  .carousel-inner img {
+      width: 50%;
+      height: 50%;
+  }
+  </style>
+
+<div id="demo" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+  
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <center><img src="img/Gol 2019.png" width="400" height="100"></center>
+    </div>
+    <div class="carousel-item">
+     <center> <img src="img/Saveiro.png" width="400" height="100"></center>
+    </div>
+    <div class="carousel-item">
+     <center> <img src="img/Van-Kia.png" width="400" height="100"></center>
+    </div>
+  </div>
+  
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+<br/>
+
+
+</br>
+</br>
+
+<!--Veículos-->
+<p id="Veículos"></p>
+<div class="container-fluid">
+<div class="col-sm-12">
+<h2 class="display-5"> Veículos </h2>
+<footer class="blockquote-footer">Encontre seu veículo</footer>
+<br/>
+</div>
+</div>
+<br/>
+
+<!-- Card -->
+<div class="container-fluid">
+<div class="col-sm-12">	
+	<div class="row">
+		<div class="card-columns">
+			<div class="col-sm-4">
+				<div class="card" style="width:330px">
+					<img class="img-fluid" src="img/Gol G6.png" alt="" style="width:100%">
+						<div class="card-body">
+							<h3>Passeio</h3>
+							<p>Encontre veículos de passeio clicando no botão abaixo</p>
+							<button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="#Passeio">Mostrar mais</button>
+								<div id="Passeio" class="collapse">
+								
+								Gol é um automóvel da Volkswagen, desenhado no Brasil e comercializado em vários países sob diversas designações, dentre eles México e Argentina.
+								O Gol é considerado um dos maiores sucessos da Volkswagen do Brasil de todos os tempos. É também o primeiro e único carro brasileiro a ultrapassar 
+								a marca de 5 milhões de unidades produzidas até hoje 
+	  
+							</div>
+					</div>
+				</div>
+			</div>
+			
+<!---Card------------------>
+			
+			<div class="col-sm-4">
+				<div class="card" style="width:330px">
+					<img class="img-fluid" src="img/Utilitários.png" alt="Utilitários" style="width:100%">
+						<div class="card-body">
+								<h3>Utilitários</h3>
+								<p>Encontre utilitários clicando no botão abaixo</p>
+								<button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="#Utilitários">Mostrar mais</button>
+								<div id="Utilitários" class="collapse">
+
+									Os utilitários representam hoje um segmento importante no mercado de veículos brasileiro e mundial. 
+									Eles estão por toda parte: nas ruas, estradas, na cidade e no campo. Os veículos utilitários são modelos que servem tanto para transporte 
+									de cargas como para levar pessoas, com finalidade comercial ou não. 
+									Também muito utilizados por empresas, os veículos utilitários leves possuem maior espaço interno para dar maior conforto para os passageiros, 
+									bem como comportam um amplo espaço para a carga. Normalmente, também são carros mais potentes que garantem bom desempenho, além de segurança aos passageiros.
+									
+
+							</div>
+					</div>
+				</div>
+			</div>
+			
+		<!---Card-------------------------->
+		
+			<div class="col-sm-4">
+				<div class="card" style="width:360px">
+					<img src="img/Vans.jpg" alt="Vans" style="width:100%">
+						<div class="card-body">
+							<h3>Vans</h3>
+							<p>Encontre Vans clicando no botão abaixo</p>
+							<button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="#Vans">Mostrar mais</button>
+							<div id="Vans" class="collapse">
+								A palavra van deriva da palavra inglesa caravan, que originalmente designava as carruagens cobertas de tecido, 
+								(muito utilizadas no período do Velho Oeste americano). Note-se que, em Portugal, a palavra camioneta é também 
+								usada para veículos pesados de passageiros (autocarros em Portugal, ônibus no Brasil) que ligam localidades diferentes, 
+								sendo, nesta situação, sinónimo de autocarro.
+								
+  							</div>
+						</div>
+				</div>
+			</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<br/>
+	
+
+<p id="Estatísticas"></p>
+</br>
+</br>
+
+<style>
+.city {
+  background-color: tomato;
+  color: white;
+  padding: 10px;
+}
+</style>
+
+
+<h3 class="city">Estatísticas</h3>
+<p>Veja os dados em tempo real</p>
+
+<!--Media Object-->
+<div class="border w-100">
+<div class="card bg-dark text-white">
+
+
+<br/>
+<div class="container-fluid">
+<div class="row">
+<div class="col-sm-6">
+  <img class="img-fluid" src="img/honda.png" class="mr-20 mt-20" style="width:360px">
+	<p>Serviços Oferecidos</p>  
+</div>
+  <div class="col-sm-6">
+  <div class="media-body">
+  <p>
+  
+  Dentre os serviços oferecidos na plataforma você pode encontrar alguéis de motos, carros, lanchas e até  caminhões. 
+  A qualquer hora do dia você pode locar o ítem desejado com profissionais a disposição para atendê-lo, de domingo a domingo. 
+
+
+</p>
+
+  </div>
+  </div>
+  </div>
+
+<br/> 
+<div class="container-fluid">
+<div class="border w-100">
+</div>
+</div>
+
+<br/>
+
+<div class="container-fluid">
+<div class="row">
+<div class="col-sm-6">
+  <img class="img-fluid" src="img/Hyundai HR.png" class="mr-20 mt-20" style="width:360px">
+	<p>Veículos Cadastrados</p>
+  </div>
+  <div class="col-sm-6">
+  <div class="media-body">
+  <p> 
+  
+  Aqui você pode contar com uma variada frota de veículos, de acordo com a sua necessidade. Procure em 
+  nosso show room o tipo de carro, utilitário ou van que precisa e contrate já.
+  
+</p>
+  
+  </div>
+  </div>
+  </div>
+  </div>
+  
+<br/>
+<div class="container-fluid">
+<div class="border w-100">
+</div>
+</div>
+<br/>
+
+<div class="container-fluid">
+<div class="row">
+<div class="col-sm-6">
+  <img class="img-fluid" src="img/Kia Bongo.png" alt="Kia Bongo" class="mr-20 mt-20" style="width:360px">
+  <p>Volume de negócios</p>
+  </div>
+  <div class="col-sm-6">
+  <div class="media-body">
+  <p>
+  
+	 Por dia são feitas dezenas de contratações dentre os diversos modelos disponíveis. 
+	 O volume de aluguéis da Locatec é computado em tempo real aqui. 
+	
+</p>
+ 
+  </div>
+  </div>
+  </div>
+  </div>
+
+
+  
+<br/>
+<div class="container-fluid">
+<div class="border w-100">
+</div>
+</div>
+<br/>
+<br/>
+
+</div>
+</div>
+
+<p id="Cadastros"></p>
+</br>
+</br>
+
+<!--Tabela-->
+
+<div class="table-responsive">
+<table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th>Institucional</th>
+        <th>Negócios</th>
+        <th>Para você</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="table-active">
+        <td>Sobre a Locatec</td>
+        <td>Para Empresas</td>
+        <td>Minhas Reservas</td>
+
+      </tr>
+      <tr class="table-active">
+        <td>Relação com o Investidor</td>
+        <td>Agências de Viagem</td>
+        <td>Roteiros de Viagem</td>
+      
+      </tr>
+      </tr>
+      <tr class="table-active">
+        <td>Trabalhe conosco</td>
+        <td>Seja um franqueado</td>
+        <td>Cadastra-se</td>
+      </tr>
+      </tr>
+
+</tbody>
+</div>
+</div>
+</div>
+
+<!/body>
+<!/html>

@@ -1,0 +1,6 @@
+Create database locatec
+
+Create table usuarios (
+login Varchar(30),
+senha Varchar(40)
+) ENGINE = MyISAM;
