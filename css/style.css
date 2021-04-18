@@ -47,10 +47,18 @@ form{
 .navMain li a:hover {
   background-color: #111;
 	color: aliceblue;
+	border-radius: 8%;
 }
 .navMain .loginButton{
 	float: right;
 }
+
+/*
+.navMain .tabs #tab1 {
+	float: left;
+}
+*/
+
 /* --------------------------- MENU --------------------------- FIM -- */
 
 

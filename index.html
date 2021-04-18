@@ -31,31 +31,34 @@
   </h1>
 </div> 
 
-    
-<!------- Login/Cadastro ------------->
 
-<!--
-<div id="loginButton">
-    <nav class="navbar navbar">
-        <ul class="nav justify-content-center" role="navigation">
-            <li class="nav-item">
-                <a class="nav-link active" href="login.html" id="login">Login</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link active" href="cadastro.html" id="cadastro">Cadastrar</a>
-            </li>
-        </ul>
-    </nav>
-</div>
--->
-
-<br>
 
 <!------- MENU ----------- INICIO -->
 <nav class="navMain">
     <ul>
         <li>
-			<a href="locacao.html">Locação</a>
+<!--
+			<button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="tabs">
+			</button>
+-->
+				<a href="#tab1" class="btn btn-secondary" data-toggle="collapse" data-target="#tabn">Locação</a>
+			
+			<div id="tabn" class="collapse">
+				<div class="tabs">
+					<div id="tab1">
+					<H4>Alugar</H4>
+						<label>Local </label>
+							<input type="text" name="local" id="local">
+						<label>Data e Hora Retirada </label>
+							<input type="date" name="datahoraretira" id="datahoraretira">
+						<label>Data e Hora Devolução </label>
+							<input type="date" name="datahoradevolucao" id="datahoradevolucao">
+						<input type="submit" value="buscar" name="buscar" id="buscar"><br>
+					</div>
+    			</div>
+			</div>
+
+<!--			<a href="locacao.html" >Locação</a>-->
 		</li>
         <li>
 			<a href="Frotas.html">Frotas</a>
@@ -78,6 +81,18 @@
     </ul>
 </nav>
 <!------- MENU ----------- FIM -->
+	
+<!-- TEST DROPDOWN > LOCACAO - [SIDNEI]
+	<div>
+		<button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="#test">Mostrar </button>
+			<div id="test" class="collapse">
+				test
+			</div>
+	</div>
+-->
+
+
+
 
 
 <!-- --------- MENU INICIAL
@@ -177,7 +192,8 @@
 							<h3>Passeio</h3>
 							<p>Encontre veículos de passeio clicando no botão abaixo</p>
 							<button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="#Passeio">Mostrar mais</button>
-								<div id="Passeio" class="collapse">
+							
+							<div id="Passeio" class="collapse">
 								
 								Gol é um automóvel da Volkswagen, desenhado no Brasil e comercializado em vários países sob diversas designações, dentre eles México e Argentina.
 								O Gol é considerado um dos maiores sucessos da Volkswagen do Brasil de todos os tempos. É também o primeiro e único carro brasileiro a ultrapassar 

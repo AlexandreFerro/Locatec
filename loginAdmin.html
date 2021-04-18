@@ -30,21 +30,54 @@
 </div> 
 
     
-<!------- Login/Cadastro ------------->
+<!------- MENU ----------- INICIO -->
+<nav class="navMain">
+    <ul>
+        <li>
+<!--
+			<button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="tabs">
+			</button>
+-->
+				<a href="#tab1" class="btn btn-secondary" data-toggle="collapse" data-target="#tabn">Locação</a>
+			
+			<div id="tabn" class="collapse">
+				<div class="tabs">
+					<div id="tab1">
+					<H4>Alugar</H4>
+						<label>Local </label>
+							<input type="text" name="local" id="local">
+						<label>Data e Hora Retirada </label>
+							<input type="date" name="datahoraretira" id="datahoraretira">
+						<label>Data e Hora Devolução </label>
+							<input type="date" name="datahoradevolucao" id="datahoradevolucao">
+						<input type="submit" value="buscar" name="buscar" id="buscar"><br>
+					</div>
+    			</div>
+			</div>
 
-<div id="loginButton">
-    <nav class="navbar navbar">
-        <ul class="nav justify-content-center" role="navigation">
-            <li class="nav-item">
-                <a class="nav-link active" href="login.html" id="login">Login</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link active" href="cadastro.html" id="cadastro">Cadastrar</a>
-            </li>
-            
-        </ul>
-    </nav>  
-</div>
+<!--			<a href="locacao.html" >Locação</a>-->
+		</li>
+        <li>
+			<a href="Frotas.html">Frotas</a>
+		</li>
+        <li>
+			<a href="#clientes.html">Clientes</a>
+		</li>
+        <li>
+			<a href="locacao.html">Veículos</a>
+		</li>
+		
+		<div class="loginButton">
+			<li>
+				<a href="login.html">Login</a>	<!--	LOGIN	-->
+			</li>
+			<li>
+				<a href="cadastro.html">Cadastrar</a>	<!--	CADASTRO	-->
+			</li>
+		</div>
+    </ul>
+</nav>
+<!------- MENU ----------- FIM -->
 
 
     <center>
