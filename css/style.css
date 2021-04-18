@@ -1,4 +1,4 @@
-/* --------------------------- CONTEXTO GERAL ----------------------------- */
+/* --------------------------- CONTEXTO GERAL --------------------------- INICIO -- */
 body{
 /*background-color: #f0f0f0;*/
     font: 18px arial;
@@ -19,10 +19,10 @@ form{
     padding: 40px;
     line-height: 2;
 }
-/* --------------------------- CONTEXTO GERAL ----------------------------- */
+/* --------------------------- CONTEXTO GERAL --------------------------- FIM -- */
 
 
-/* --------------------------- MENU ----------------------------- */
+/* --------------------------- MENU --------------------------- INICIO -- */
 .navMain ul {
   list-style-type: none;
   margin: 0;
@@ -36,25 +36,25 @@ form{
 }
 
 .navMain li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+	display: block;
+	color: black;
+	text-align: center;
+	padding: 14px 16px;
+	width: 100px;
+	text-decoration: none;
 }
 
 .navMain li a:hover {
   background-color: #111;
+	color: aliceblue;
 }
-/* --------------------------- MENU ----------------------------- */
+.navMain .loginButton{
+	float: right;
+}
+/* --------------------------- MENU --------------------------- FIM -- */
 
 
-
-
-
-
-
-/* --------------------------- CARROUSEL ----------------------------- */
+/* --------------------------- CARROUSEL --------------------------- INICIO -- */
 .carousel-inner{
     /* Mesma cor do SLIDE 1 (gol) */
     background: #f5f5f5; 
@@ -79,7 +79,7 @@ form{
     background: #000;
 }
 */
-/* --------------------------- CARROUSEL ----------------------------- */
+/* --------------------------- CARROUSEL --------------------------- FIM -- */
 
 
 
