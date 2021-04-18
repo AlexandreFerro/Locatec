@@ -1,34 +1,60 @@
 <html>
 <head>
     <title> Login de Usuário </title>
-	  <!-- [Sidnei] 
-    SINCRONIZA A PAGINA A CADA 30 segundos 
-  -->
-  <meta http-equiv="refresh" content="5"> 
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel = "stylesheet" href = "css/style.css">
+<!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pompiere&display=swap" rel="stylesheet"> 
+    
+<!-- [Sidnei] SINCRONIZA A PAGINA A CADA 30 segundos -->
+<meta http-equiv="refresh" content="5">     
+    
+    
 </head>
 <body>
+<!----------------------------------- INICIO CORPO DO SITE -->
+<div class="container-fluid">
+  <h1>
+    <b><a href="index.html">Locatec</a></b>
+  </h1>
+</div> 
 
-<form method="POST" action="login.php">
+    
+<!------- Login/Cadastro ------------->
+
+<div id="loginButton">
+    <nav class="navbar navbar">
+        <ul class="nav justify-content-center" role="navigation">
+            <li class="nav-item">
+                <a class="nav-link active" href="login.html" id="login">Login</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="cadastro.html" id="cadastro">Cadastrar</a>
+            </li>
+            
+        </ul>
+    </nav>  
+</div>
+
+
 <center>
 	<br>
 	<br>
 	
 		<H1><a href="loginclient.html">Login Cliente</a></H1>
-	
 	<br>
 	<br>
-	
 		<H1><a href="loginfunc.html">Login Funcionário</a></H1>
-	
 	<br>
 	<br>
-	
 		<H1><a href="loginadmin.html">Login Administradores</a></H1>
 	<br>
 	<br>
 <a href="index.html">Voltar a pagina inicial</a>
 
 </center>
-</form>
 </body>
 </html>
