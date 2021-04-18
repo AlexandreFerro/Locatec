@@ -19,8 +19,35 @@ form{
     padding: 40px;
     line-height: 2;
 }
-
 /* --------------------------- CONTEXTO GERAL ----------------------------- */
+
+
+/* --------------------------- MENU ----------------------------- */
+.navMain ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #c2c2c2;
+}
+
+.navMain li {
+  float: left;
+}
+
+.navMain li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navMain li a:hover {
+  background-color: #111;
+}
+/* --------------------------- MENU ----------------------------- */
+
 
 
 
