@@ -11,12 +11,10 @@ body{
     border-radius: 10px;
 }
 
-.centerContent{
-}
 form{
     display: block;
-    background: #cbcbcb;
-    border: 2px solid #000;
+/*    background: #cbcbcb;*/
+/*    border: 2px solid #000;*/
     padding: 40px;
     line-height: 2;
     
@@ -29,6 +27,24 @@ form{
 
 
 
+
+
+
+
+.carousel-inner{
+    background: #f5f5f5; /* Mesma cor do SLIDE 1 (gol) */
+    height: 250px;
+}
+
+.carousel-inner img {
+/* Make the image fully responsive */
+    width: 50%;
+    height: 50%;
+}
+
+.carousel-inner .active{
+/*    height: 250px;*/
+}
 
 
 

@@ -47,18 +47,54 @@
     </nav>  
 </div>
 
-<center class="centerContent">
+<center>
 <H1>Cadastrar</H1>
 
 <form method="POST" action="cadastro.php">
+    <table>
+        <tr>
+            <td>
+                <label>Primeiro nome: &nbsp;</label>
+            </td>
+            <td>
+                <input type="text" name="cadFirstname" id="firstName"><br>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Sobrenome: &nbsp;</label>
+            </td>
+            <td>
+                <input type="text" name="cadLastname" id="lastName"><br>
+            </td>    
+        </tr>
+        <tr>
+            <td>
+                <label>Email: &nbsp;</label>
+            </td>
+            <td>
+                <input type="email" name="cadEmail" id="cadEmail"><br>
+            </td>    
+        </tr>
+        <tr>
+            <td>
+                <label>Senha: &nbsp;</label>
+            </td>
+            <td>
+                <input type="password" name="senha" id="senha"><br>
+            </td>    
+        </tr>
+        <tr>
+            <td>
+<!--                Bloco vazio -->
+            </td>
+            <td>
+                <br>
+                <input type="submit" value="Cadastrar" id="cadSubmit" name="cadSubmit">
+            </td>
+        </tr>
         
-    <label>Primeiro nome: &nbsp;</label><input type="text" name="cadFirstname" id="firstName"><br>
-    <label>Sobrenome: &nbsp;</label><input type="text" name="cadLastname" id="lastName"><br>
-    <label>Email: &nbsp;</label><input type="email" name="cadEmail" id="cadEmail"><br>
-    <label>Senha: &nbsp;</label><input type="password" name="senha" id="senha"><br>
-    
-    <br>
-    <input type="submit" value="Cadastrar" id="cadSubmit" name="cadSubmit">
+    </table>    
 </form>
 
 <br>
