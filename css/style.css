@@ -1,3 +1,4 @@
+/* --------------------------- CONTEXTO GERAL ----------------------------- */
 body{
 /*background-color: #f0f0f0;*/
     font: 18px arial;
@@ -17,22 +18,19 @@ form{
 /*    border: 2px solid #000;*/
     padding: 40px;
     line-height: 2;
-    
 }
 
+/* --------------------------- CONTEXTO GERAL ----------------------------- */
 
 
 
 
 
 
-
-
-
-
-
+/* --------------------------- CARROUSEL ----------------------------- */
 .carousel-inner{
-    background: #f5f5f5; /* Mesma cor do SLIDE 1 (gol) */
+    /* Mesma cor do SLIDE 1 (gol) */
+    background: #f5f5f5; 
     height: 250px;
 }
 
@@ -46,15 +44,16 @@ form{
     background: #000;    
 }
 .carousel-control-prev{
-//.carousel-control-next-icon
+    //.carousel-control-next-icon
     background: #000;
 }
-
 .carousel-control-next{
     //.carousel-control-next-icon
     background: #000;
 }
 */
+/* --------------------------- CARROUSEL ----------------------------- */
+
 
 
 
@@ -74,7 +73,7 @@ nav-link active {
 	width: 400px;
 	margin: auto;
 	padding-top: 40px;
-     }
+}
 
 .card{
 	box-shadow: 1px 1px 5px #ccc;
@@ -95,6 +94,7 @@ nav-link active {
 	color: rgb(75,75,75);
 	display: block;
 }
+
 .card-group > input{
 	border-radius: 5px;
 	outline: 0;
@@ -102,6 +102,7 @@ nav-link active {
 	height: 25px;
 	padding: 5px;
 }
+
 .card-group > button{
 	background-color: #dc3545;
 	width: 100%;
@@ -110,7 +111,6 @@ nav-link active {
 	color: white;
 	border: 0px;
 	outline: 0px;
-
 }
 
 .imglogin{
@@ -166,5 +166,5 @@ div.tabs > div:target > div, :target #default2 > div {
   z-index: -1}			/* Raise it above the others */
 
 div.tabs :target {
-  outline: none}
-	
+  outline: none
+}
