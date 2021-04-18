@@ -4,75 +4,90 @@
 
   <title>Locatec</title>
   
-  <!-- Meta tags Obrigatórias -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-  <link rel = "stylesheet" href = "css/style.css">
-
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-
-<!-------Cabeçalho--------->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel = "stylesheet" href = "css/style.css">
+<!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pompiere&display=swap" rel="stylesheet"> 
+    
+<!-- [Sidnei] SINCRONIZA A PAGINA A CADA 30 segundos -->
+<meta http-equiv="refresh" content="5"> 
+<link rel = "stylesheet" href = "css/style.css">
+    
+    
+  <!------------------------------------------------ Bootstrap CSS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+<!----------------------------------- INICIO CORPO DO SITE -->
 <div class="container-fluid">
-  <h1 id="title"> <font face="Tempus Sans ITC"> <b> Locatec </b></h1>
-</div>  
+  <h1>
+    <b><a href="index.html">Locatec</a></b>
+  </h1>
+</div> 
 
-<!-------Ficheiro------------->
+    
+<!------- Login/Cadastro ------------->
+
+<div id="loginButton">
+    <nav class="navbar navbar">
+        <ul class="nav justify-content-center" role="navigation">
+            <li class="nav-item">
+                <a class="nav-link active" href="login.html" id="login">Login</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="cadastro.html" id="cadastro">Cadastrar</a>
+            </li>
+            
+        </ul>
+    </nav>  
+</div>
 
 
-     <div class=tabs>
-     <div id=tab1> <a href="#tab1">Locação</a>
-     <div><center><H4>Alugar</H4>
-	  <label>Local</label><input type="text" name="local" id="local">
-	  <label>Data e Hora Retirada</label><input type="date" name="datahoraretira" id="datahoraretira">
-	  <label>Data e Hora Devolução</label><input type="date" name="datahoradevolucao" id="datahoradevolucao">
-	  <input type="submit" value="buscar" name="buscar" id="buscar"><br></div></div>
+<!------- Ficheiro-----------
+-->
+
+<!--
+<nav> ----------------- Nova ideia de menu
+    <ul>
+        <li>1</li>
+        <li>1</li>
+        <li>1</li>
+        <li>1</li>
+    </ul>
+</nav>
+-->
+<div class=tabs>
+     <!-- <div id=tab1> <a href="#tab1">Locação</a> -->
+    <div id=tab1> <a href="locacao.html">Locação</a>
+<!--        <div>-->
+<!--                <H4>Alugar</H4>-->
+<!--                <label>Local </label><input type="text" name="local" id="local">-->
+<!--                <label>Data e Hora Retirada </label><input type="date" name="datahoraretira" id="datahoraretira">-->
+<!--                <label>Data e Hora Devolução </label><input type="date" name="datahoradevolucao" id="datahoradevolucao">-->
+<!--                <input type="submit" value="buscar" name="buscar" id="buscar"><br>-->
+<!--        </div>-->
+    </div>
 	
-  
-
-     
+   
 	<div id=tab2> <a href="#tab2">Frotas</a>
-      <div>Gol - Saveiro - Van</div>
+<!--      <div>Gol - Saveiro - Van</div>-->
      </div>
 
      <div id=tab3> <a href="#tab3">Clientes</a>
-      <div>Cadastro de Clientes</div>
+<!--      <div>Cadastro de Clientes</div>-->
      </div>
 
      <div id=default2> <a href="#default2">Veículos</a>
-      <div>Cadastro de Veículos</div>
+<!--      <div>Cadastro de Veículos</div>-->
      </div>
-     </div>
-     </div>
-      
-     
-      </div>
-
-    
-      
-   
-
-<!-------Login------------->
-
-<div class="content">
-           
-            <nav>
-            <ul class="nav justify-content-center" role="navigation">
-            
-	    <li class="nav-item">
-	    <nav class="navbar navbar">
-            <a class="nav-link active" href="login.html" id="login">Login</a>
-	    <a class="nav-link active" href="cadastro.html" id="cadastro">Cadastro</a>
-	    </li>
-                
-            </ul>
-            </nav>  
-
 </div>
   
+   
 
 <!--Carrousel-->
  <style>
@@ -116,27 +131,29 @@
 <br/>
 
 
-</br>
-</br>
+<br>
+<br>
 
 <!--Veículos-->
 <p id="Veículos"></p>
 <div class="container-fluid">
 <div class="col-sm-12">
+    
 <h2 class="display-5"> Veículos </h2>
 <footer class="blockquote-footer">Encontre seu veículo</footer>
-<br/>
+<br>
 </div>
 </div>
-<br/>
+<br>
 
 <!-- Card -->
 <div class="container-fluid">
 <div class="col-sm-12">	
 	<div class="row">
 		<div class="card-columns">
+
 			<div class="col-sm-4">
-				<div class="card" style="width:330px">
+				<div class="card" style="width:250px">
 					<img class="img-fluid" src="img/Gol G6.png" alt="" style="width:100%">
 						<div class="card-body">
 							<h3>Passeio</h3>
@@ -156,7 +173,7 @@
 <!---Card------------------>
 			
 			<div class="col-sm-4">
-				<div class="card" style="width:330px">
+				<div class="card" style="width:250px">
 					<img class="img-fluid" src="img/Utilitários.png" alt="Utilitários" style="width:100%">
 						<div class="card-body">
 								<h3>Utilitários</h3>
@@ -169,7 +186,6 @@
 									de cargas como para levar pessoas, com finalidade comercial ou não. 
 									Também muito utilizados por empresas, os veículos utilitários leves possuem maior espaço interno para dar maior conforto para os passageiros, 
 									bem como comportam um amplo espaço para a carga. Normalmente, também são carros mais potentes que garantem bom desempenho, além de segurança aos passageiros.
-									
 
 							</div>
 					</div>
@@ -179,7 +195,7 @@
 		<!---Card-------------------------->
 		
 			<div class="col-sm-4">
-				<div class="card" style="width:360px">
+				<div class="card" style="width:250px">
 					<img src="img/Vans.jpg" alt="Vans" style="width:100%">
 						<div class="card-body">
 							<h3>Vans</h3>
@@ -199,10 +215,11 @@
 </div>
 </div>
 </div>
-</div>
+<!--</div>-->
 
 <br/>
 	
+<!--
 
 <p id="Estatísticas"></p>
 </br>
@@ -219,6 +236,7 @@
 
 <h3 class="city">Estatísticas</h3>
 <p>Veja os dados em tempo real</p>
+-->
 
 <!--Media Object-->
 <div class="border w-100">
@@ -235,12 +253,9 @@
   <div class="col-sm-6">
   <div class="media-body">
   <p>
-  
-  Dentre os serviços oferecidos na plataforma você pode encontrar alguéis de motos, carros, lanchas e até  caminhões. 
+    Dentre os serviços oferecidos na plataforma você pode encontrar alguéis de motos, carros, lanchas e até  caminhões. 
   A qualquer hora do dia você pode locar o ítem desejado com profissionais a disposição para atendê-lo, de domingo a domingo. 
-
-
-</p>
+  </p>
 
   </div>
   </div>
@@ -315,8 +330,8 @@
 </div>
 
 <p id="Cadastros"></p>
-</br>
-</br>
+<br>
+<br>
 
 <!--Tabela-->
 
@@ -330,30 +345,25 @@
       </tr>
     </thead>
     <tbody>
-      <tr class="table-active">
-        <td>Sobre a Locatec</td>
-        <td>Para Empresas</td>
-        <td>Minhas Reservas</td>
-
-      </tr>
-      <tr class="table-active">
-        <td>Relação com o Investidor</td>
-        <td>Agências de Viagem</td>
-        <td>Roteiros de Viagem</td>
-      
-      </tr>
-      </tr>
-      <tr class="table-active">
-        <td>Trabalhe conosco</td>
-        <td>Seja um franqueado</td>
-        <td>Cadastra-se</td>
-      </tr>
-      </tr>
-
-</tbody>
-</div>
+        <tr class="table-active">
+            <td>Sobre a Locatec</td>
+            <td>Para Empresas</td>
+            <td>Minhas Reservas</td>
+        </tr>   
+        <tr class="table-active">
+            <td>Relação com o Investidor</td>
+            <td>Agências de Viagem</td>
+            <td>Roteiros de Viagem</td>
+        </tr>
+        <tr class="table-active">
+            <td>Trabalhe conosco</td>
+            <td>Seja um franqueado</td>
+            <td>Cadastra-se</td>
+        </tr>
+    </tbody>
+</table>
 </div>
 </div>
 
-<!/body>
-<!/html>
+</body>
+</html>
