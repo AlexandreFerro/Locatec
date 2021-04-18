@@ -41,10 +41,20 @@ form{
     width: 50%;
     height: 50%;
 }
-
-.carousel-inner .active{
-/*    height: 250px;*/
+/*
+.carousel-indicators{
+    background: #000;    
 }
+.carousel-control-prev{
+//.carousel-control-next-icon
+    background: #000;
+}
+
+.carousel-control-next{
+    //.carousel-control-next-icon
+    background: #000;
+}
+*/
 
 
 
