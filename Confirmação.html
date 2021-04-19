@@ -1,0 +1,205 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title>Locatec</title>
+  
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel = "stylesheet" href = "css/style.css">
+<!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pompiere&display=swap" rel="stylesheet"> 
+    
+<!-- [Sidnei] SINCRONIZA A PAGINA A CADA 30 segundos -->
+<!--<meta http-equiv="refresh" content="5"> -->
+<link rel = "stylesheet" href = "css/style.css">
+    
+    
+  <!------------------------------------------------ Bootstrap CSS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+    
+    
+<body> <!----------------------------------- INICIO CORPO DO SITE -->
+<div class="container-fluid">
+  <h1>
+    <b><a href="index.html">Locatec</a></b>
+  </h1>
+</div> 
+
+
+
+<!------- MENU ----------- INICIO -->
+<nav class="navMain">
+    <ul>
+        <li>
+<!--
+			<button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="tabs">
+			</button>
+-->
+				<a href="#tab1" class="btn btn-secondary" data-toggle="collapse" data-target="#tabn">Locação</a>
+			
+			<div id="tabn" class="collapse">
+				<div class="tabs">
+					<div id="tab1">
+					
+					<H4>Alugar</H4>
+						
+						<label>Local</label>
+							<input type="text" name="local" id="local">
+						<label>Data e Hora Origem </label>
+							<input type="date" name="datahoraorigem" id="datahoraorigem">
+						<label>Data e Hora Devolução </label>
+							<input type="date" name="datahoradevolucao" id="datahoradevolucao">
+						<input type="submit" value="buscar" name="buscar" id="buscar"><br>
+					
+					</div>
+    			</div>
+			</div>
+
+<!--			<a href="locacao.html" >Locação</a>-->
+		</li>
+        <li>
+			<a href="Frotas.html">Frotas</a>
+		</li>
+        <li>
+			<a href="#clientes.html">Clientes</a>
+		</li>
+        <li>
+			<a href="locacao.html">Veículos</a>
+		</li>
+		
+		<div class="loginButton">
+			<li>
+				<a href="login.html">Login</a>	<!--	LOGIN	-->
+			</li>
+			<li>
+				<a href="cadastro.html">Cadastrar</a>	<!--	CADASTRO	-->
+			</li>
+		</div>
+    </ul>
+</nav>
+<!------- MENU ----------- FIM -->
+	
+<!-- TEST DROPDOWN > LOCACAO - [SIDNEI]
+	<div>
+		<button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="#test">Mostrar </button>
+			<div id="test" class="collapse">
+				test
+			</div>
+	</div>
+-->
+
+<!-- --------- MENU INICIAL
+
+<!------- Ficheiro ----------- --COMENTADO>
+<div class=tabs>
+	<div id=tab1> <a href="#tab1">Locação</a>
+<!--    <div id=tab1> <a href="locacao.html">Locação</a>-- COMENTADO >
+        <div>
+       <H4>Alugar</H4>
+			<label>Local </label><input type="text" name="local" id="local">
+			<label>Data e Hora Origem </label><input type="date" name="datahoraorigem" id="datahoraorigem">
+			<label>Data e Hora Devolução </label><input type="date" name="datahoradevolucao" id="datahoradevolucao">
+			<input type="submit" value="buscar" name="buscar" id="buscar"><br>
+		</div>
+    </div>
+	
+   
+	<div id=tab2> <a href="#tab2">Frotas</a>
+<!--      <div>Gol - Saveiro - Van</div>-- COMENTADO >
+     </div>
+
+     <div id=tab3> <a href="#tab3">Clientes</a>
+<!--      <div>Cadastro de Clientes</div>-- COMENTADO >
+     </div>
+
+     <div id=default2> <a href="#default2">Veículos</a>
+<!--      <div>Cadastro de Veículos</div>-- COMENTADO >
+     </div>
+</div>
+-->
+<br>
+
+<br/>
+<!--Confirmação da Reserva-->
+
+<style>
+.city {
+  background-color: tomato;
+  color: white;
+  padding: 10px;
+}
+</style>
+
+<h3 class="city">Confirmar Reserva</h3>
+
+<!--Media Object-->
+<div class="border w-100">
+<div class="card white text-black">
+
+<div class="container-fluid">
+<div class="row">
+<div class="col-sm-6">
+
+<H4>Alugar</H4>
+
+<label>Local de origem</label><input type="text" size="20" name="localdeorigem" id="localdeorigem">
+<label>Local de entrega</label><input type="text" size="20" name="localdeentrega" id="localdeentrega">
+<label>Data de Origem </label><input type="date" size="20" name="datadeorigem" id="datadeorigem">
+<label>Data de Devolução </label><input type="date" size="20" name="datadevolucao" id="datadevolucao">
+<label>Hora de Origem </label><input type="time" size="10" name="horadeorigem" id="horadeorigem">
+<label>Hora de Devolução </label><input type="time" size="10" name="horadevolucao" id="horadevolucao"><br>
+<input type="submit" value="avançar" name="buscar" id="avançar"><br>
+
+</div>
+</div>
+
+</p>
+
+  </div>
+  </div>
+  </div>
+
+<br/> 
+
+	
+<!--Tabela-->
+
+<div class="table-responsive">
+<table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th>Institucional</th>
+        <th>Negócios</th>
+        <th>Para você</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr class="table-active">
+            <td>Sobre a Locatec</td>
+            <td>Para Empresas</td>
+            <td>Minhas Reservas</td>
+        </tr>   
+        <tr class="table-active">
+            <td>Relação com o Investidor</td>
+            <td>Agências de Viagem</td>
+            <td>Roteiros de Viagem</td>
+        </tr>
+        <tr class="table-active">
+            <td>Trabalhe conosco</td>
+            <td>Seja um franqueado</td>
+            <td>Cadastra-se</td>
+        </tr>
+    </tbody>
+</table>
+</div>
+</div>
+
+</body>
+</html>
