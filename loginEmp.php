@@ -25,49 +25,36 @@
 <h1>
 
 <br>
-   <a href="cadastro.html">Retornar</a>
+   <a href="loginclient.html">Retornar</a>
 <br>
 <br>
 <br>
 
 <!-- ---------------------------- INICIO PHP -->
 <?php
-	
-//"delete from usuarios" 
-	//(apaga todos os registros da tabela) - Apos testes...
 
-	$nome = $_POST['cadFirstName'];
-	$sobrenome = $_POST['cadLastName'];
-	$email = $_POST['cadEmail'];
-	$senha = md5($_POST['cadSenha']);	
-	
-// SE NOME ESTIVER EM BRANCO RETORNA AO CADASTRO
-//IF($nome == "")
-//{
-//	echo "ERRO, redirecionando...";
-//	echo "Nome não pode ficar em branco";
-//	set_time_limit(100);
-//	header("Location: cadastro.html");// localhost/
-//}else{
-//	
-//	$nome = $_POST['cadFirstName'];
-//	$sobrenome = $_POST['cadLastName'];
-//	$email = $_POST['cadEmail'];
-//	$senha = md5($_POST['cadSenha']);
+$login = $_POST['login'];
+$senha = $_POST['senha'];
+$entrar = $_POST['entrar'];
+$strcon = mysqli_connect('127.0.0.1','root','','locatec');
 
-// Cria a string de conexão $strcon
-
-		$strcon = mysqli_connect('127.0.0.1','root','','locatec') 
-			or die('Erro ao conectar ao banco de dados');
-		$sql = "INSERT INTO usuarios VALUES ";
-		$sql .= "('$nome', '$sobrenome', '$email', '$senha')"; 
-		
-		mysqli_query($strcon,$sql) 
-			or die("Erro ao tentar cadastrar registro");
-		mysqli_close($strcon);
-		
-		echo "Cadastrado com sucesso!";		
-//	} // ELSE -- FIM
+if (isset($entrar)) 
+  {
+    $verifica = mysqli_query($strcon,"SELECT * FROM usuarios WHERE login ='$login' AND senha = '$senha'") 
+      or die("Dados incorretos");
+    if (mysqli_num_rows($verifica)<=0)
+      {
+        echo"<script language='javascript' type='text/javascript'>
+              alert('Login e/ou senha incorretos');window.location.href='login.html';
+            </script>";
+        die();
+      }
+    else
+     {
+      setcookie("login",$login);
+      header("Location:index.php");
+     }
+  }
 ?>
 <!-- ---------------------------- FIM PHP -->
 
