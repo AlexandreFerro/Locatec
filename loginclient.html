@@ -131,6 +131,20 @@
 
     <form method="POST" action="loginClient.php">
         <table>
+			<tr>
+				<td>
+					<label>Tipo de login </label>
+				</td>
+				<td style="float: right;">
+					<select>
+						<option value="-">Selecione o tipo</option>
+						<option value="client">Cliente</option>
+						<option value="employee">Funcionário</option>
+						<option value="amdin">Administrador</option>
+					</select>
+				
+				</td>
+			</tr>
              <tr>
                  <td>
                      <label>Login:</label>
@@ -151,7 +165,7 @@
                  <td>
                      <!--                Bloco vazio -->
                  </td>
-                 <td>
+                 <td style="float: right;">
                      <br>
                      <input type="submit" value="entrar" id="entrar" name="entrar"><br>
                  </td>
