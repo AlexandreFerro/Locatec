@@ -1,0 +1,27 @@
+
+Falar sobre os topicos da SPRINT 1
+
+1 - site acessivel -------- (ok)
+4 - catalogo (pagina frotas) - (ok)
+2 - tela de login --------- (ok) (add MD5 - OK)
+3 - cadastros (veiculo, funcionario) - (ok)
+
+
+
+index
+
+============= CORPO
+	pagina inicial
+	overview
+	responsividade
+	informacoes sobre servicos
+
+============= CARD
+	descricao dos veiculos
+
+============= ARTIGOS
+	informacoes sobre veiculos e servicos
+
+============= RODAPE
+	informacoes complementares
+

@@ -34,41 +34,19 @@
 
 
 
+
+    
 <!------- MENU ----------- INICIO -->
 <nav class="navMain">
     <ul>
         <li>
-<!--
-			<button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="tabs">
-			</button>
--->
-				<a href="#tab1" class="btn btn-secondary" data-toggle="collapse" data-target="#tabn">Locação</a>
-			
-			<div id="tabn" class="collapse">
-				<div class="tabs">
-					<div id="tab1">
-					
-					<H4>Alugar</H4>
-						
-						<label>Local</label>
-							<input type="text" name="local" id="local">
-						<label>Data e Hora Origem </label>
-							<input type="date" name="datahoraorigem" id="datahoraorigem">
-						<label>Data e Hora Devolução </label>
-							<input type="date" name="datahoradevolucao" id="datahoradevolucao">
-						<input type="submit" value="buscar" name="buscar" id="buscar"><br>
-					
-					</div>
-    			</div>
-			</div>
-
-<!--			<a href="locacao.html" >Locação</a>-->
+			<a href="#tab1" data-toggle="collapse" data-target="#tabn" class="activeMenu">Locação</a>
 		</li>
         <li>
 			<a href="Frotas.html">Frotas</a>
 		</li>
         <li>
-			<a href="#clientes.html">Clientes</a>
+			<a href="cadastro.html">Clientes</a>
 		</li>
         <li>
 			<a href="locacao.html">Veículos</a>
@@ -86,47 +64,68 @@
 </nav>
 <!------- MENU ----------- FIM -->
 	
-<!-- TEST DROPDOWN > LOCACAO - [SIDNEI]
-	<div>
-		<button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="#test">Mostrar </button>
-			<div id="test" class="collapse">
-				test
-			</div>
-	</div>
--->
-
-<!-- --------- MENU INICIAL
-
-<!------- Ficheiro ----------- --COMENTADO>
-<div class=tabs>
-	<div id=tab1> <a href="#tab1">Locação</a>
-<!--    <div id=tab1> <a href="locacao.html">Locação</a>-- COMENTADO >
-        <div>
-       <H4>Alugar</H4>
-			<label>Local </label><input type="text" name="local" id="local">
-			<label>Data e Hora Origem </label><input type="date" name="datahoraorigem" id="datahoraorigem">
-			<label>Data e Hora Devolução </label><input type="date" name="datahoradevolucao" id="datahoradevolucao">
-			<input type="submit" value="buscar" name="buscar" id="buscar"><br>
-		</div>
-    </div>
 	
-   
-	<div id=tab2> <a href="#tab2">Frotas</a>
-<!--      <div>Gol - Saveiro - Van</div>-- COMENTADO >
-     </div>
 
-     <div id=tab3> <a href="#tab3">Clientes</a>
-<!--      <div>Cadastro de Clientes</div>-- COMENTADO >
-     </div>
+<!------- SUB-MENU 01 ----------- INICIO -->
 
-     <div id=default2> <a href="#default2">Veículos</a>
-<!--      <div>Cadastro de Veículos</div>-- COMENTADO >
-     </div>
-</div>
+<div id="tabn" class="collapse">
+	<div class="tabs">
+		<div id="tab1">
+			
+			<h5>Alugar</h5>
+			<table>
+				<tr>
+					<td>
+				<label>Local de retirada </label>
+					</td>
+					<td>
+				<input type="text" name="local">
+					</td>
+					<td>
+				<label>Data/Hora Retirada </label>
+					</td>
+					<td>
+				<input type="date" name="datahoraretira"><br>
+					</td>
+				</tr>
+				<tr>
+					<td>
+					</td>
+					<td>
+					</td>
+					<td>
+				<label>Data/Hora Devolução </label>
+					</td>
+					<td>
+				<input type="date" name="datahoradevolucao"><br>
+					</td>
+<!--
+				</tr>
+				<tr>
 -->
+					<td>
+					</td>
+					<td>
+					</td>
+					<td>
+					</td>
+					<td>
+			<input type="submit" value="buscar" name="buscar" 
+				   id="buscar" onclick="location.href='Confirmação.html'"><br>
+					</td>
+				</tr>
+				
+			</table>
+		</div>
+	</div>
+</div>
+<!------- SUB-MENU 01 ----------- FIM -->
+
+	
+
 <br>
 
-<br/>
+<br>
 <!--Confirmação da Reserva-->
 
 <style>

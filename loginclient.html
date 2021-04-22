@@ -1,5 +1,4 @@
 <html>
-
 <head>
     <title> Login de Usuário </title>
 
@@ -12,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Pompiere&display=swap" rel="stylesheet">
 
     <!-- [Sidnei] SINCRONIZA A PAGINA A CADA 30 segundos -->
-    <meta http-equiv="refresh" content="5">
+<!--    <meta http-equiv="refresh" content="5">-->
 
 
     <!------------------------------------------------ Bootstrap CSS -->
@@ -32,39 +31,18 @@
         </h1>
     </div>
 
-
+    
 <!------- MENU ----------- INICIO -->
 <nav class="navMain">
     <ul>
         <li>
-<!--
-			<button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="tabs">
-			</button>
--->
-				<a href="#tab1" class="btn btn-secondary" data-toggle="collapse" data-target="#tabn">Locação</a>
-			
-			<div id="tabn" class="collapse">
-				<div class="tabs">
-					<div id="tab1">
-					<H4>Alugar</H4>
-						<label>Local </label>
-							<input type="text" name="local" id="local">
-						<label>Data e Hora Retirada </label>
-							<input type="date" name="datahoraretira" id="datahoraretira">
-						<label>Data e Hora Devolução </label>
-							<input type="date" name="datahoradevolucao" id="datahoradevolucao">
-						<input type="submit" value="buscar" name="buscar" id="buscar"><br>
-					</div>
-    			</div>
-			</div>
-
-<!--			<a href="locacao.html" >Locação</a>-->
+			<a href="#tab1" data-toggle="collapse" data-target="#tabn">Locação</a>
 		</li>
         <li>
 			<a href="Frotas.html">Frotas</a>
 		</li>
         <li>
-			<a href="#clientes.html">Clientes</a>
+			<a href="cadastro.html">Clientes</a>
 		</li>
         <li>
 			<a href="locacao.html">Veículos</a>
@@ -72,7 +50,7 @@
 		
 		<div class="loginButton">
 			<li>
-				<a href="login.html">Login</a>	<!--	LOGIN	-->
+				<a href="login.html" class="activeMenu">Login</a>	<!--	LOGIN	-->
 			</li>
 			<li>
 				<a href="cadastro.html">Cadastrar</a>	<!--	CADASTRO	-->
@@ -82,6 +60,65 @@
 </nav>
 <!------- MENU ----------- FIM -->
 	
+	
+
+<!------- SUB-MENU 01 ----------- INICIO -->
+
+<div id="tabn" class="collapse">
+	<div class="tabs">
+		<div id="tab1">
+			
+			<h5>Alugar</h5>
+			<table>
+				<tr>
+					<td>
+				<label>Local de retirada </label>
+					</td>
+					<td>
+				<input type="text" name="local">
+					</td>
+					<td>
+				<label>Data/Hora Retirada </label>
+					</td>
+					<td>
+				<input type="date" name="datahoraretira"><br>
+					</td>
+				</tr>
+				<tr>
+					<td>
+					</td>
+					<td>
+					</td>
+					<td>
+				<label>Data/Hora Devolução </label>
+					</td>
+					<td>
+				<input type="date" name="datahoradevolucao"><br>
+					</td>
+<!--
+				</tr>
+				<tr>
+-->
+					<td>
+					</td>
+					<td>
+					</td>
+					<td>
+					</td>
+					<td>
+			<input type="submit" value="buscar" name="buscar" 
+				   id="buscar" onclick="location.href='Confirmação.html'"><br>
+					</td>
+				</tr>
+				
+			</table>
+		</div>
+	</div>
+</div>
+<!------- SUB-MENU 01 ----------- FIM -->
+
+	
+
 
 
     <center>
@@ -92,7 +129,7 @@
 
 
 
-    <form method="POST" action="login.php">
+    <form method="POST" action="loginClient.php">
         <table>
              <tr>
                  <td>

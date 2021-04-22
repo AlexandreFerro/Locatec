@@ -1,0 +1,46 @@
+	
+<!-------Ficheiro------------->
+
+
+     <div class=tabs>
+     <div id=tab1> <a href="#tab1">Locação</a>
+     <div><center><H4>Alugar</H4>
+	  <label>Local</label><input type="text" name="local" id="local">
+	  <label>Data e Hora Retirada</label><input type="date" name="datahoraretira" id="datahoraretira">
+	  <label>Data e Hora Devolução</label><input type="date" name="datahoradevolucao" id="datahoradevolucao">
+	  <input type="submit" value="buscar" name="buscar" id="buscar"><br></div></div>
+	
+  
+
+     
+	<div id=tab2> <a href="#tab2">Frotas</a>
+      <div>Gol - Saveiro - Van</div>
+     </div>
+
+     <div id=tab3> <a href="#tab3">Clientes</a>
+      <div>Cadastro de Clientes</div>
+     </div>
+
+     <div id=default2> <a href="#default2">Veículos</a>
+      <div>Cadastro de Veículos</div>
+     </div>
+     </div>
+     </div>
+     </div>
+     
+   
+
+<!-------Login------------->
+
+<div class="content">
+           
+            <nav>
+            <ul class="nav justify-content-center" role="navigation">
+            <li class="nav-item">
+	    <nav class="navbar navbar">
+            <a class="nav-link active" href="login.html" id="login">Login</a>
+	    <a class="nav-link active" href="cadastro.html" id="cadastro">Cadastro</a>
+	    </li>
+            </ul>
+            </nav>  
+</div>
