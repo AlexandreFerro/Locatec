@@ -19,6 +19,14 @@ form{
     padding: 40px;
     line-height: 2;
 }
+
+.content-body-site a{
+	color: #3590c6;
+/*	display: block;*/
+	background: #ddefff;
+	padding: 0px 6px;
+	border-radius: 8px;
+}
 /* --------------------------- CONTEXTO GERAL --------------------------- FIM -- */
 
 
@@ -28,7 +36,7 @@ form{
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #c2c2c2;
+  background-color: #b6cbff;
 }
 
 .navMain li {
@@ -53,13 +61,28 @@ form{
 	float: right;
 }
 
-/*
-.navMain .tabs #tab1 {
-	float: left;
+.navMain .activeMenu{
+	color: #fff; 
+	background: #6b93ff; 
+	font-weight: bold; 
+	border-radius: 8px;"
 }
-*/
-
 /* --------------------------- MENU --------------------------- FIM -- */
+
+
+/* --------------------------- SUB-MENU 01 --------------------------- INICIO -- */
+#tabn {
+	/* PARA FINS DE ANALISE */
+/*	display: inline-block; */
+/*	float: left;*/
+	font-size: 14px;
+	background: #dde7ff;
+	margin: auto;
+	padding: 15px;
+	width: 100%;
+}
+/* --------------------------- SUB-MENU 01 --------------------------- FIM -- */
+
 
 
 /* --------------------------- CARROUSEL --------------------------- INICIO -- */

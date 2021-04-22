@@ -24,27 +24,12 @@
 
 <body> <!----------------------------------- INICIO CORPO DO SITE -->
 
-<!--
-<!------- Login/Cadastro -----------
-
-<div id="loginButton">
-    <nav class="navbar navbar">
-        <ul class="nav justify-content-center" role="navigation">
-            <li class="nav-item">
-                <a class="nav-link active" href="login.html" id="login">Login</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link active" href="cadastro.html" id="cadastro">Cadastrar</a>
-            </li>
-        </ul>
-    </nav>
-</div>
--->
-
 
 <!-------Cabeçalho--------->
 <div class="container-fluid">
-  <h1 id="title"> <font face="Arial"><b><a href="index.html">Locatec</a></b> </b></h1>
+  <h1 id="title">
+	  <b><a href="index.html">Locatec</a></b>
+	</h1>
 </div>  
 
 
@@ -52,33 +37,10 @@
 <nav class="navMain">
     <ul>
         <li>
-<!--
-			<button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="tabs"></button>
--->
-			
-			<a href="#tab1" class="btn btn-secondary" data-toggle="collapse" data-target="#tabn">Locação</a>
-			
-			<div id="tabn" class="collapse">
-				<div class="tabs">
-					<div id="tab1">
-					
-					<H4>Alugar</H4>
-						  <label>Local</label><input type="text" name="local" id="local">
-							
-						<label>Data e Hora Retirada </label>
-							<input type="date" name="datahoraretira" id="datahoraretira">
-						<label>Data e Hora Devolução </label>
-							<input type="date" name="datahoradevolucao" id="datahoradevolucao">
-						<input type="submit" value="buscar" name="buscar" id="buscar" onclick="location.href='Confirmação.html'"><br>
-						 
-					</div>
-    			</div>
-			</div>
-
-<!--			<a href="locacao.html" >Locação</a>-->
+			<a href="#tab1" data-toggle="collapse" data-target="#tabn">Locação</a>
 		</li>
         <li>
-			<a href="Frotas.html">Frotas</a>
+			<a href="Frotas.html" class="activeMenu">Frotas</a>
 		</li>
         <li>
 			<a href="cadastro.html">Clientes</a>
@@ -97,11 +59,71 @@
 		</div>
     </ul>
 </nav>
-<!--
-	O OUTRO MENU FOI REMOVIDO E SALVO EM UM ARQUIVO TXT (menu.frota.txt)
--->
-	
 <!------- MENU ----------- FIM -->
+	
+	
+
+<!------- SUB-MENU 01 ----------- INICIO -->
+
+<div id="tabn" class="collapse">
+	<div class="tabs">
+		<div id="tab1">
+			
+			<h5>Alugar</h5>
+			<table>
+				<tr>
+					<td>
+				<label>Local de retirada </label>
+					</td>
+					<td>
+				<input type="text" name="local">
+					</td>
+					<td>
+				<label>Data/Hora Retirada </label>
+					</td>
+					<td>
+				<input type="date" name="datahoraretira"><br>
+					</td>
+				</tr>
+				<tr>
+					<td>
+					</td>
+					<td>
+					</td>
+					<td>
+				<label>Data/Hora Devolução </label>
+					</td>
+					<td>
+				<input type="date" name="datahoradevolucao"><br>
+					</td>
+<!--
+				</tr>
+				<tr>
+-->
+					<td>
+					</td>
+					<td>
+					</td>
+					<td>
+					</td>
+					<td>
+			<input type="submit" value="buscar" name="buscar" 
+				   id="buscar" onclick="location.href='Confirmação.html'"><br>
+					</td>
+				</tr>
+				
+			</table>
+		</div>
+	</div>
+</div>
+<!------- SUB-MENU 01 ----------- FIM -->
+
+	
+
+<!------- CONTEUDO-CORPO-SITE ----------- INICIO -->
+<div class="content-body-site">
+
+
    
 <p id="Escolha seu veículo"></p>
 <h3>Escolha seu veículo</h3>
@@ -282,6 +304,10 @@ VAN KIA<br>
 </div>
 </div>
 </div>
+
+
+</div> 
+<!------- CONTEUDO-CORPO-SITE ----------- FIM -->
 
 </body>
 </html>
