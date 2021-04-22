@@ -1,0 +1,9 @@
+Create database cetacol
+
+Create table usuarios (
+nome Varchar (40),
+sobrenome Varchar(40),
+email Varchar(30),
+senha Varchar(15)
+
+) ENGINE = MyISAM;
