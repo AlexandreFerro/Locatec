@@ -76,7 +76,7 @@
 
 </h1>
 <br><br><br>
-Retornando a pagina anterior...
+Retornando a página anterior...
 
 </div>
 </body>

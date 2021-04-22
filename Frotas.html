@@ -47,51 +47,61 @@
   <h1 id="title"> <font face="Arial"><b><a href="index.html">Locatec</a></b> </b></h1>
 </div>  
 
-<!-------Ficheiro------------->
 
+<!------- MENU ----------- INICIO -->
+<nav class="navMain">
+    <ul>
+        <li>
+<!--
+			<button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="tabs"></button>
+-->
+			
+			<a href="#tab1" class="btn btn-secondary" data-toggle="collapse" data-target="#tabn">Locação</a>
+			
+			<div id="tabn" class="collapse">
+				<div class="tabs">
+					<div id="tab1">
+					
+					<H4>Alugar</H4>
+						  <label>Local</label><input type="text" name="local" id="local">
+							
+						<label>Data e Hora Retirada </label>
+							<input type="date" name="datahoraretira" id="datahoraretira">
+						<label>Data e Hora Devolução </label>
+							<input type="date" name="datahoradevolucao" id="datahoradevolucao">
+						<input type="submit" value="buscar" name="buscar" id="buscar" onclick="location.href='Confirmação.html'"><br>
+						 
+					</div>
+    			</div>
+			</div>
 
-     <div class=tabs>
-     <div id=tab1> <a href="#tab1">Locação</a>
-     <div><center><H4>Alugar</H4>
-	  <label>Local</label><input type="text" name="local" id="local">
-	  <label>Data e Hora Retirada</label><input type="date" name="datahoraretira" id="datahoraretira">
-	  <label>Data e Hora Devolução</label><input type="date" name="datahoradevolucao" id="datahoradevolucao">
-	  <input type="submit" value="buscar" name="buscar" id="buscar"><br></div></div>
+<!--			<a href="locacao.html" >Locação</a>-->
+		</li>
+        <li>
+			<a href="Frotas.html">Frotas</a>
+		</li>
+        <li>
+			<a href="cadastro.html">Clientes</a>
+		</li>
+        <li>
+			<a href="locacao.html">Veículos</a>
+		</li>
+		
+		<div class="loginButton">
+			<li>
+				<a href="login.html">Login</a>	<!--	LOGIN	-->
+			</li>
+			<li>
+				<a href="cadastro.html">Cadastrar</a>	<!--	CADASTRO	-->
+			</li>
+		</div>
+    </ul>
+</nav>
+<!--
+	O OUTRO MENU FOI REMOVIDO E SALVO EM UM ARQUIVO TXT (menu.frota.txt)
+-->
 	
-  
-
-     
-	<div id=tab2> <a href="#tab2">Frotas</a>
-      <div>Gol - Saveiro - Van</div>
-     </div>
-
-     <div id=tab3> <a href="#tab3">Clientes</a>
-      <div>Cadastro de Clientes</div>
-     </div>
-
-     <div id=default2> <a href="#default2">Veículos</a>
-      <div>Cadastro de Veículos</div>
-     </div>
-     </div>
-     </div>
-     </div>
-     
-   
-
-<!-------Login------------->
-
-<div class="content">
-           
-            <nav>
-            <ul class="nav justify-content-center" role="navigation">
-            <li class="nav-item">
-	    <nav class="navbar navbar">
-            <a class="nav-link active" href="login.html" id="login">Login</a>
-	    <a class="nav-link active" href="cadastro.html" id="cadastro">Cadastro</a>
-	    </li>
-            </ul>
-            </nav>  
-</div>
+<!------- MENU ----------- FIM -->
    
 <p id="Escolha seu veículo"></p>
 <h3>Escolha seu veículo</h3>
@@ -273,5 +283,5 @@ VAN KIA<br>
 </div>
 </div>
 
-<!/body>
-<!/html>
+</body>
+</html>
