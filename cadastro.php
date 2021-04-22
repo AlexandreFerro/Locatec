@@ -7,7 +7,7 @@ $senha = md5($_POST['cadSenha']);
 
 // Cria a string de conexão $strcon
 
-$strcon = mysqli_connect('127.0.0.1','root','','locatec') 
+$strcon = mysqli_connect('127.0.0.1','root','','cetacol') 
     or die('Erro ao conectar ao banco de dados');
 $sql = "INSERT INTO usuarios VALUES ";
 $sql .= "('$nome', '$sobrenome', '$email', '$senha')"; 

@@ -3,7 +3,7 @@
 $login = $_POST['login'];
 $entrar = $_POST['entrar'];
 $senha = $_POST['senha'];
-$strcon = mysqli_connect('127.0.0.1','root','','locatec');
+$strcon = mysqli_connect('127.0.0.1','root','','cetacol');
 
 if (isset($entrar)) 
   {
