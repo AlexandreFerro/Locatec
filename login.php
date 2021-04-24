@@ -61,35 +61,63 @@ $result = mysqli_query($con,"select * from usuarios where email = '$email' and s
 	echo "depois da query - OK <br>";
 
 					   
-if($result){
+/* if($result){
 	echo "segundo test query (IF / ELSE) - OK <br>";
 }else{
 	die(mysqli_error($result));
-}
+} */
 
+/* if(is_null('email')){
+	echo "<br> EMAIL VAZIO | Conteudo = " .$email;
+}else{
+	echo "<br> EMAIL DIGITADO = " .$email;
+} */
 
 
 //================================= Teste de conexao
 $row = mysqli_fetch_array($result);
 
+
 		// TESTA SE OS DADOS ESTAO EM BRANCO
-if (is_null($row['email']) || is_null($row['senha']))
+if (is_null($email) || is_null($senha))
 {
-	echo ("<br> Usuario ou senha incorreto... (não existe no banco...)"); //.mysqli_error($result);
+	echo ("<br> Usuario ou senha incorreto ou em branco... (não existe no banco...)"); //.mysqli_error($result);
 	echo "<br><br> <b>dados digitados</b> (email: $email <b> || </b> senha: $senha) <br>";
 }
 else
 {
 		// TESTA SE OS DADOS EXISTEM NO BANCO
-		if ($row['email'] == $email && $row['senha'] == $senha )
+		if (isset($row['email']) == $email /* && $row['senha'] == $senha */ )
 		{
-			echo "<br> <b>Conectado com sucesso!</b> <br> Bem vindo: " .$row['email'];
-			echo "<br><br> <b>dados digitados</b> (email: $email <b> || </b> senha: $senha) <br>";
+			// -----------------------------------------
+			if($email == null){
+				echo "<br> Usuário não preenchido";
+			}else{
+				// -----------------------------------------
+				if (isset($row['senha']) == $senha){
+					die('<br> <b>Conectado com sucesso!</b> 
+					<br> Redirecionando...');
+					//<a href="login.html"> -- Retornar</a>
+					
+					if($senha == null){
+						echo "<br> Senha não preenchida";
+					}else{
+
+					}
+				}else{
+					echo "else - da senha";
+				}
+				// -----------------------------------------
+			}
+			// -----------------------------------------
 		}
 		else
 		{
-			die("Falha no login ou senha" .mysqli_error($result));
-		} // FIM ELSE 02
+			echo "<br> <b>Login ou senha incorretos...</b>"; //.$result;
+			echo "<br> Tente novamente.";
+			//echo "<br> Login digitado: $email";
+			//echo "<br> Senha digitada: $senha";
+		} // FIM ELSE 02 --.mysqli_error(
 
 } // FIM ELSE 01
 
@@ -99,7 +127,7 @@ else
 
 
 <!--</h1>-->
-<br>
+<br><br>
    <a href="login.html">Retornar</a>
 <br>
 Retornando a pagina anterior...
