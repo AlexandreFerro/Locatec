@@ -26,7 +26,7 @@
 <br>
 <br>
 
-<!-- ---------------------------- INICIO PHP -->
+<!-- ---------------------------------------------- INICIO PHP -->
 <?php
 	
 //"delete from usuarios" 
@@ -51,7 +51,7 @@ mysqli_close($strcon);
 echo "Cadastrado com sucesso!";
 //	} // ELSE -- FIM
 ?>
-<!-- ---------------------------- FIM PHP -->
+<!-- ---------------------------------------------- FIM PHP -->
 
 
 </h1>

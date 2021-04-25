@@ -13,7 +13,7 @@
 <!-- [Sidnei] SINCRONIZA A PAGINA A CADA 30 segundos -->
 <!--<meta http-equiv="refresh" content="10"; url="cadastro.html"/>-->
 
-  <!------------------------------------------------ Bootstrap CSS -->
+<!-- ---------------------------------------------- Bootstrap CSS -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
@@ -26,9 +26,10 @@
 <div class="body-content-layer-1">
 	
 <div style="margin-top: 100px; text-align: center; ">
-<h1> <!-- font: 30px pompiere -->
+<!--<h1>  -->
+<!--font: 30px pompiere -->
 
-<!-- ---------------------------- INICIO PHP -->
+<!-- ---------------------------------------------- INICIO PHP -->
 <?php
 
 $email = $_POST['email'];
@@ -135,10 +136,10 @@ else
 
 
 ?>
-<!-- ---------------------------- FIM PHP -->
+<!-- ---------------------------------------------- FIM PHP -->
 
 
-</h1>
+<!--</h1>-->
 <br><br>
    <a href="login.html">Retornar</a>
 <br>
