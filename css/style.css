@@ -5,7 +5,8 @@ body{
 }
 
 #loginButton{
-    background: #cbcbcb;
+    /* background: #cbcbcb; */
+    background: #fff;
     float: right;
     position: relative;
     top: -40px;
@@ -18,14 +19,6 @@ form{
 /*    border: 2px solid #000;*/
     padding: 40px;
     line-height: 2;
-}
-
-.content-body-site a{
-	color: #3590c6;
-/*	display: block;*/
-	background: #ddefff;
-	padding: 0px 6px;
-	border-radius: 8px;
 }
 /* --------------------------- CONTEXTO GERAL --------------------------- FIM -- */
 
@@ -86,6 +79,32 @@ form{
 /* --------------------------- SUB-MENU 01 --------------------------- FIM -- */
 
 
+/* --------------------------- CORPO PAGINA --------------------------- INICIO -- */
+.global-body-content{
+	margin: auto;
+}
+
+.global-body-content table{
+	margin: auto;
+	text-align: left;
+}
+
+.body-content-layer-1 a{
+	color: #3590c6;
+	background: #ddefff;
+	/* display: block; */
+	/* text-align: center; */
+	padding: 0px 6px;
+	border-radius: 8px;
+}
+
+.body-content-layer-1{
+	text-align: center;
+	margin-top: 40px;
+}
+
+/* --------------------------- CORPO PAGINA --------------------------- FIM -- */
+
 
 /* --------------------------- CARROUSEL --------------------------- INICIO -- */
 .carousel-inner{
@@ -117,13 +136,13 @@ form{
 
 
 
-
+/*
 nav-link active {
   		background-color: tomato;
   		color: white;
 		font-size: 16px;
   		padding: 10px;
-}
+}*/
 
 .navbar-default .navbar-nav > li > a {
     font-size: 26px;
