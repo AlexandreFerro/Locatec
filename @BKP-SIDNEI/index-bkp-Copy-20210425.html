@@ -165,86 +165,115 @@
 
 <br>
 
-<!--- CARDS TITULO ------------------------ -->
-<div style="margin-left: 30px;">
-	<h2> Veículos </h2>
-	<p class="blockquote-footer">Encontre seu veículo</p>
+<!--Veículos-->
+<p id="Veículos"></p>
+<div class="container-fluid">
+<!--<div class="col-sm-12">-->
+    
+<h2 class="display-5"> Veículos </h2>
+<footer class="blockquote-footer">Encontre seu veículo</footer>
+<br>
+<!--</div>-->
 </div>
-
 <br>
 
+<!-- Card -->
+<div class="container-fluid">
+<div class="col-sm-12">	
+	<div class="row">
+		<div class="card-columns">
 
-<!-- ------------ CARDS - MASTER DIVS ------------ INICIO -->
-<div class="card-container">
-<div class="card-sub-layer-1">
+			<div class="col-sm-4">
+				<div class="card" style="width:250px">
+					<img class="img-fluid" src="img/Gol G6.png" alt="" style="width:100%">
+						<div class="card-body">
+							<h3>Passeio</h3>
+							<p>Encontre veículos de passeio clicando no botão abaixo</p>
+							<button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="#Passeio">Mostrar mais</button>
+							
+							<div id="Passeio" class="collapse">
+								
+								Gol é um automóvel da Volkswagen, desenhado no Brasil e comercializado em vários países sob diversas designações, dentre eles México e Argentina.
+								O Gol é considerado um dos maiores sucessos da Volkswagen do Brasil de todos os tempos. É também o primeiro e único carro brasileiro a ultrapassar 
+								a marca de 5 milhões de unidades produzidas até hoje 
+	  
+							</div>
+					</div>
+				</div>
+			</div>
+			
+<!---Card------------------>
+			
+			<div class="col-sm-4">
+				<div class="card" style="width:250px">
+					<img class="img-fluid" src="img/Utilitários.png" alt="Utilitários" style="width:100%">
+						<div class="card-body">
+								<h3>Utilitários</h3>
+								<p>Encontre utilitários clicando no botão abaixo</p>
+								<button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="#Utilitários">Mostrar mais</button>
+								<div id="Utilitários" class="collapse">
 
+									Os utilitários representam hoje um segmento importante no mercado de veículos brasileiro e mundial. 
+									Eles estão por toda parte: nas ruas, estradas, na cidade e no campo. Os veículos utilitários são modelos que servem tanto para transporte 
+									de cargas como para levar pessoas, com finalidade comercial ou não. 
+									Também muito utilizados por empresas, os veículos utilitários leves possuem maior espaço interno para dar maior conforto para os passageiros, 
+									bem como comportam um amplo espaço para a carga. Normalmente, também são carros mais potentes que garantem bom desempenho, além de segurança aos passageiros.
 
-<!--- Card 1 ------------------------ -->
-<div class="card-content">
-	<img src="img/Gol G6.png" alt="">
-		<h3>Passeio</h3>
-		<p>Encontre veículos de passeio no botão abaixo</p>
-		<button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="#Passeio">Mostrar mais</button>
+							</div>
+					</div>
+				</div>
+			</div>
+			
+		<!---Card-------------------------->
 		
+			<div class="col-sm-4">
+				<div class="card" style="width:250px">
+					<img src="img/Vans.jpg" alt="Vans" style="width:100%">
+						<div class="card-body">
+							<h3>Vans</h3>
+							<p>Encontre Vans clicando no botão abaixo</p>
+							<button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="#Vans">Mostrar mais</button>
+							<div id="Vans" class="collapse">
+								A palavra van deriva da palavra inglesa caravan, que originalmente designava as carruagens cobertas de tecido, 
+								(muito utilizadas no período do Velho Oeste americano). Note-se que, em Portugal, a palavra camioneta é também 
+								usada para veículos pesados de passageiros (autocarros em Portugal, ônibus no Brasil) que ligam localidades diferentes, 
+								sendo, nesta situação, sinónimo de autocarro.
+								
+  							</div>
+						</div>
+				</div>
+			</div>
 </div>
-
-<!--- Card 2 ------------------------ -->
-<div class="card-content">
-	<img src="img/Utilitários.png" alt="Utilitários">
-	<h3>Utilitários</h3>
-	<p>Encontre utilitários clicando no botão abaixo</p>
-		<button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="#Utilitários">Mostrar mais</button>
-		
 </div>
-
-<!--- Card 3 ------------------------ -->
-<div class="card-content">
-	<img src="img/Vans.jpg" alt="Vans">
-	<h3>Vans</h3>
-	<p>Encontre Vans clicando no botão abaixo</p>
-		<button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="#Vans">Mostrar mais</button>
-
 </div>
-
-</div> <!-- card-sub-layer-1 -->
-</div> <!-- CARD-CONTAINER -->
-<!-- ------------ CARDS - MASTER DIVS ------------ FECHAMENTO -->
-
-<br>
-
-<!-- ------------ CARDS - SUB-TEXT ------------ ABERTURA -->
-<div id="Passeio" class="collapse">
-	<div class="card-sub-txt">
-	<b>Lazer...</b><br>
-	<p>Gol é um automóvel da Volkswagen, desenhado no Brasil e comercializado em vários países sob diversas designações, dentre eles México e Argentina.</p>
-	<p>O Gol é considerado um dos maiores sucessos da Volkswagen do Brasil de todos os tempos. É também o primeiro e único carro brasileiro a ultrapassar a marca de 5 milhões de unidades produzidas até hoje.</p>
-	</div>
 </div>
+<!--</div>-->
 
-<div id="Utilitários" class="collapse">
-	<div class="card-sub-txt">
-	<b>Utilitários...</b>
-	<p>Os utilitários representam hoje um segmento importante no mercado de veículos brasileiro e mundial.</p>
-	<p>Eles estão por toda parte: nas ruas, estradas, na cidade e no campo. Os veículos utilitários são modelos que servem tanto para transporte de cargas como para levar pessoas, com finalidade comercial ou não.</p>
-	<p>Também muito utilizados por empresas, os veículos utilitários leves possuem maior espaço interno para dar maior conforto para os passageiros, bem como comportam um amplo espaço para a carga. Normalmente, também são carros mais potentes que garantem bom desempenho, além de segurança aos passageiros.</p>
-	</div>
-</div>
+<br/>
+	
+<!--
 
-<div id="Vans" class="collapse">
-	<div class="card-sub-txt">
-	<b>Vans...</b><br>
-	<p>A palavra van deriva da palavra inglesa caravan, que originalmente designava as carruagens cobertas de tecido, (muito utilizadas no período do Velho Oeste americano).</p>
-	<p>Note-se que, em Portugal, a palavra camioneta é também usada para veículos pesados de passageiros (autocarros em Portugal, ônibus no Brasil) que ligam localidades diferentes, sendo, nesta situação, sinónimo de autocarro.</p>
-	</div>
-</div>
-<!-- ------------ CARDS - SUB-TEXT ------------ FIM -->
+<p id="Estatísticas"></p>
+</br>
+</br>
 
-<br>
+<style>
+.city {
+  background-color: tomato;
+  color: white;
+  padding: 10px;
+}
+</style>
+
+
+<h3 class="city">Estatísticas</h3>
+<p>Veja os dados em tempo real</p>
+-->
 
 <!--Media Object-->
 <div class="border w-100">
-test - Fora da caixa
 <div class="card bg-dark text-white">
+
 
 <br/>
 <div class="container-fluid">
@@ -331,10 +360,11 @@ test - Fora da caixa
 
 </div>
 </div>
-</div>
+
+<p id="Cadastros"></p>
+<br>
 <br>
 
-<!-- ------------ RODAPE ------------ INICIO -->
 <!--Tabela-->
 
 <div class="table-responsive">
@@ -364,6 +394,7 @@ test - Fora da caixa
         </tr>
     </tbody>
 </table>
+</div>
 </div>
 
 
