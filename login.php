@@ -33,7 +33,7 @@
 <?php
 
 $email = $_POST['email'];
-$senha = md5($_POST['senha']); //Transforma a senha recebida em HASH para validar com a HASH salva no BD
+$senha = sha1($_POST['senha']); //Transforma a senha recebida em HASH para validar com a HASH salva no BD
 
 
 //================================= Seguranca contra SQL INJECTION
