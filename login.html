@@ -7,7 +7,7 @@
 <link rel = "stylesheet" href = "css/style.css">
     
 <!-- [Sidnei] SINCRONIZA A PAGINA A CADA 30 segundos -->
-<!-- <meta http-equiv="refresh" content="5"-->     
+<!-- <meta http-equiv="refresh" content="5"     -->
 
 <!------------------------------------------------ Bootstrap CSS -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -120,20 +120,20 @@
 
 	<form method="POST" action="login.php">
         <table>
-			<tr>
+			 <tr>
 				<td>
 					<label><b style="color: red;">*</b> Tipo de login <b style="color: red;font-size: 11px;">(desabilitado...)</b> </label>
 				</td>
-				<td style="float: right;">
-					<select>
+				<td>
+					<select style="float: right; width: 100%;">  <!--border: 1px solid red;-->
 						<option value="-">Selecione o tipo</option>
 						<option value="client">Cliente</option>
 						<option value="employee">Funcionário</option>
 						<option value="amdin">Administrador</option>
 					</select>
-				
 				</td>
-			</tr>
+				
+			 </tr>
              <tr>
                  <td>
                      <label><b style="color: red;">*</b> Email</label>
