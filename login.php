@@ -47,16 +47,16 @@ $senha = stripcslashes($senha);
 $con = mysqli_connect("localhost","root","","locatec"); //IP(hostname) - User - Pass - DB
 
 //------------ PARA FINS DE TESTE E VALIDACAO DA CONEXAO DB -------------- INICIO
-if($con){
+/* if($con){
 	echo "teste conexao DB - OK <br>";
 }else{
 	die(mysqli_error($con));
-}
+} */
 //------------ PARA FINS DE TESTE E VALIDACAO DA CONEXAO DB -------------- FIM
 
 //================================= Conexao com dados do usuario
 	//------------ PARA FINS DE TESTE E VALIDACAO DA QUERY -------------- INICIO
-		echo "antes da query - OK <br>";
+		// echo "antes da query - OK <br>";
 	//------------ PARA FINS DE TESTE E VALIDACAO DA QUERY -------------- FIM
 
 $result = mysqli_query($con,"select * from usuarios where email = '$email' and senha = '$senha'") 
@@ -64,7 +64,7 @@ $result = mysqli_query($con,"select * from usuarios where email = '$email' and s
 					<br>ERROR.MSG: " .mysqli_error($result));
 
 	//------------ PARA FINS DE TESTE E VALIDACAO DA QUERY -------------- INICIO
-		echo "depois da query - OK <br>";
+		// echo "depois da query - OK <br>";
 	//------------ PARA FINS DE TESTE E VALIDACAO DA QUERY -------------- FIM
 
 //================================= Dados trazidos pela conexao acima
@@ -87,15 +87,17 @@ if (is_null($email) || is_null($senha))
 else
 {
 	// -----------------------------------------
-	if($email == null){ //Testa se o email está em branco
+	if($email == null) //Testa se o email está em branco
+	{
 		die("<br> Usuário não preenchido");
 	
 	}else{
 		// TESTA SE O EMAIL EXISTE NO BANCO
 		if (isset($row['email']) == $email) //Testa se email digitado existe no DB através da query
-		{	
+		{
 			// -----------------------------------------
-			if($senha == null){//Testa se a senha está em branco
+			if($senha == null) //Testa se a senha está em branco
+			{
 				die("<br> Senha não preenchida");
 			}else{
 				
