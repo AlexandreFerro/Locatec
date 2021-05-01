@@ -35,7 +35,7 @@
 	$nome = $_POST['cadFirstName'];
 	$sobrenome = $_POST['cadLastName'];
 	$email = $_POST['cadEmail'];
-	$senha = md5($_POST['cadSenha']);
+	$senha = sha1($_POST['cadSenha']);
 
 //===================== Cria a string de conexão $strcon
 
