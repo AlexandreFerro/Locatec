@@ -89,18 +89,18 @@ form{
 	text-align: left;
 }
 
+.body-content-layer-1{
+	text-align: center;
+	margin-top: 40px;
+}
+
 .body-content-layer-1 a{
-	color: #3590c6;
+	color: #1187cc;
 	background: #ddefff;
 	/* display: block; */
 	/* text-align: center; */
 	padding: 0px 6px;
-	border-radius: 8px;
-}
-
-.body-content-layer-1{
-	text-align: center;
-	margin-top: 40px;
+	border-radius: 2px;
 }
 
 /* --------------------------- CORPO PAGINA --------------------------- FIM -- */
