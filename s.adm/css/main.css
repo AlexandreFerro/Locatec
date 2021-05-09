@@ -9,7 +9,7 @@ body{
     background: #fff;
     float: right;
     position: relative;
-    top: -40px;
+    /* top: -40px; */
     border-radius: 10px;
 }
 
@@ -47,22 +47,38 @@ form{
 }
 
 .navMain li a:hover {
-  background-color: #111;
+	background-color: #111;
 	color: aliceblue;
 	border-radius: 8%;
 }
 
 .navMain .loginButton{
+	/* background: #1187cc; */
+	/*background: #b8b8b8;*/ /*test*/
 	float: right;
 	margin: 0px 6px;
+	border-radius: 8%;
 }
 
 .navMain .activeMenu{
 	color: #fff; 
-	background: #6b93ff; 
+	background: #ff6b6b; 
 	font-weight: bold; 
 	border-radius: 8px;
 }
+
+/* APENAS PARA DESTACAR LINKS DE TESTE */
+/*
+.nav-link-test{
+	background: rgb(228, 228, 228);
+	margin: 5px;
+	padding: 10px;
+	border-radius: 5px;
+	font-weight: bold;
+	display: block;
+	float: right;
+}
+*/
 /* --------------------------- MENU --------------------------- FIM -- */
 
 
@@ -116,11 +132,6 @@ form{
 	margin-top: 50px;
 }
 
-.card-content{
-	/* display: block; */
-	/* text-align: center; */
-}
-
 .card-content td{
 	/* background: #ffdada; linha comentada */
 	width: 60%;
@@ -130,26 +141,6 @@ form{
 	border-radius: 4px;
 }
 
-/* 
-.card-content img{
-	width: 245px; linha comentada 
-	width: inherit;
-	height: 170px;
-	padding-right: 12px;
-}
 
-.card-sub-txt{
-	background: #fffce4;
-	width: 800px;
-	margin: auto;
-	padding: 10px;
-	border: 1px dashed #b8b8b8;
-	font-size: 14px;
-}
-
-.card-sub-txt p{
-	margin-left: 15px;
-} 
-*/
 /* --------------------------- CARDS --------------------------- FIM -- */
 
