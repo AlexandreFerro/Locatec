@@ -107,72 +107,32 @@ form{
 /* --------------------------- CORPO PAGINA --------------------------- FIM -- */
 
 
-/* --------------------------- CARROUSEL --------------------------- INICIO -- */
-.carousel-inner{
-    /* Mesma cor do SLIDE 1 (gol #f5f5f5) */
-    background: #f5f5f5;
-/*	width: 200px;*/
-    height: 340px;
-	border: 1px dashed #b8b8b8;
-}
-
-/* Make the image fully responsive */
-.carousel-inner img {
-	width: auto;
-	height: 300px;
-	padding: 30px 5px;
-}
-
-#demo .carousel-indicators{
-    background: #cbcbcb;
-	width: 10%;
-	margin: auto;
-}
-
-#demo .link-slide-control a{
-/*	color: red;*/
-/*	background: #000;*/
-	width: 50%;
-	border: none;
-}
-
-/* ------------ SETA DE NAVEGACAO SLIDE ------------ INICIO */
-a .carousel-control-prev-icon{
-	padding: 30px;
-}
-a .carousel-control-next-icon{
-	padding: 30px;
-}
-	.carousel-control-prev{
-		/*    background: #000;*/
-	}
-	.carousel-control-next{
-		/*    background: #000;*/
-	}
-/* ------------ SETA DE NAVEGACAO SLIDE ------------ FIM */
-/* --------------------------- CARROUSEL --------------------------- FIM -- */
 
 
 /* --------------------------- CARDS --------------------------- INICIO -- */
 .card-container{
-/*	background: #ffdada;*/
+	/* background: #ffdada; linha comentada */
 	width: 100%;
-	margin: auto;
-	text-align: center;
+	margin-top: 50px;
 }
 
 .card-content{
-/*	background: #ffc7c7;*/
-	width: 360px;
-	height: auto;
-	margin: 10px;
-	padding: 10px;
-	display: inline-block;
-	border: 1px dashed #b8b8b8;
+	/* display: block; */
+	/* text-align: center; */
 }
 
+.card-content td{
+	/* background: #ffdada; linha comentada */
+	width: 60%;
+	margin: 10px;
+	padding: 10px;
+	border: 1px dashed #b8b8b8;
+	border-radius: 4px;
+}
+
+/* 
 .card-content img{
-/*	width: 245px;*/
+	width: 245px; linha comentada 
 	width: inherit;
 	height: 170px;
 	padding-right: 12px;
@@ -189,130 +149,7 @@ a .carousel-control-next-icon{
 
 .card-sub-txt p{
 	margin-left: 15px;
-}
+} 
+*/
 /* --------------------------- CARDS --------------------------- FIM -- */
 
-
-
-
-
-
-
-
-
-
-
-
-
-/*
--------------------------------------------------- INICIO - CONTEUDO NAO IDENTIFICADO
-
-ESSE CONTEUDO CAUSA ALGUM BUG NA TRANSICAO DE IMAGEM ENTRE CARROUSEL E CARDS
-
-
-.navbar-default .navbar-nav > li > a {
-    font-size: 26px;
-}
-
-.form{
-	width: 400px;
-	margin: auto;
-	padding-top: 40px;
-}
-
-.card{
-	box-shadow: 1px 1px 5px #ccc;
-	padding: 30px;
-	border-radius: 5px;
-}
-
-.card-top{
-	text-align: center;
-}
-
-.card-top{
-	text-align:center;
-}
-
-.card-group > label{
-	width: 100%;
-	color: rgb(75,75,75);
-	display: block;
-}
-
-.card-group > input{
-	border-radius: 5px;
-	outline: 0;
-	width: 100%;
-	height: 25px;
-	padding: 5px;
-}
-
-.card-group > button{
-	background-color: #dc3545;
-	width: 100%;
-	border-radius: 30px;
-	padding: 15px;
-	color: white;
-	border: 0px;
-	outline: 0px;
-}
-
-.imglogin{
-	border-radius: 50px;
-	width: 100px;
-	box-shadow: 10px 10px 5px #ccc;
-}
-
-.title{
-	color: #dc3545;
-}
--------------------------------------------------- FIM - CONTEUDO NAO IDENTIFICADO
-*/
-
-
-/* Tabbed example */
-div.tabs {
-  min-height: 7em;		/* No height: can grow if :target doesn't work */
-  position: relative;		/* Establish a containing block */
-  line-height: 1;		/* Easier to calculate with */
-  z-index: 0}			/* So that we can put other things behind */
-  
-div.tabs > div {
-  display: inline}		/* We want the buttons all on one line */
-
-div.tabs > div > a {
-  color: black;			/* Looks more like a button than a link */
-  background: #CCC;		/* Active tabs are light gray */
-  padding: 0.2em;		/* Some breathing space */
-  border: 0.1em outset #BBB;	/* Make it look like a button */
-  border-bottom: 0.1em solid #CCC} /* Visually connect tab and tab body */
-
-div.tabs > div:not(:target) > a {
-  border-bottom: none;		/* Make the bottom border disappear */
-  background: #999}		/* Inactive tabs are dark gray */
-
-div.tabs > div:target > a,	/* Apply to the targeted item or... */
-:target #default2 > a {		/* ... to the default item */
-  border-bottom: 0.1em solid #CCC; /* Visually connect tab and tab body */
-  background: #CCC}		/* Active tab is light gray */
-
-div.tabs > div > div {
-  background: #CCC;		/* Light gray */
-  z-index: -2;			/* Behind, because the borders overlap */
-  left: 0; top: 1.3em;		/* The top needs some calculation... */
-  bottom: 0; right: 0;		/* Other sides flush with containing block */
-  overflow: auto;		/* Scroll bar if needed */
-  padding: 0.3em;		/* Looks better */
-  border: 0.1em outset #BBB}	/* 3D look */
-
-div.tabs > div:not(:target) > div { /* Protect CSS1 & CSS2 browsers */
-  position: absolute }		/* All these DIVs overlap */
-
-div.tabs > div:target > div, :target #default2 > div {
-  position: absolute;		/* All these DIVs overlap */
-  z-index: -1}			/* Raise it above the others */
-
-div.tabs :target {
-  outline: none
-}

@@ -117,7 +117,7 @@
 
 
 <!--- CARDS TITULO ------------------------ -->
-<div style="margin: 100px 100px;">
+<div style="margin: 0px 100px; margin-top: 80px;">
 	<h2>Ferramentas do administrador</h2>
 	<p style="color:dimgray;"> - Ferramentas para administração de funcionários e cadastros.</p>
 </div>
@@ -125,34 +125,49 @@
 
 <!-- ------------ CARDS - MASTER DIVS ------------ INICIO -->
 <div class="card-container">
-<div class="card-sub-layer-1">
 
-
+<table class="card-content">
 <!--- Card 1 ------------------------ -->
-<div class="card-content">
-	<!-- <img src="" alt="txt"> -->
-	<h3>veículos</h3>
-	<!-- <p>Encontre veículos de passeio no botão abaixo</p> -->
-	<button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="#Passeio">Mostrar mais</button>
-</div>
-
+	<tr>
+		<td>
+			<h5>Veículos</h5>
+		</td>
+		<td>
+			<!-- <img src="" alt="txt"> -->
+			<!-- <p>Encontre veículos de passeio no botão abaixo</p> -->
+			<a href="addVeic.php"><button type="button" class="btn btn-primary">Adicionar</button></a>
+			<a href="edtVeic.php"><button type="button" class="btn btn-secondary">Editar</button></a>
+		</td>
+	</tr>
+	
 <!--- Card 2 ------------------------ -->
-<div class="card-content">
-	<!-- <img src="img/Utilitários.png" alt="Utilitários"> -->
-	<h3>funcionários</h3>
-	<!-- <p>Encontre utilitários clicando no botão abaixo</p> -->
-	<button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="#Utilitários">Mostrar mais</button>	
-</div>
+	<tr>
+		<td>
+			<h5>Funcionários</h5>
+		</td>
+		<td>
+			<!-- <img src="img/Utilitários.png" alt="Utilitários"> -->
+			<!-- <p>Encontre utilitários clicando no botão abaixo</p> -->
+			<a href="addFunc.php"><button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#Passeio">Adicionar</button></a>
+			<a href="edtFunc.php"><button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="#Passeio">Editar</button></a>
+		</td>
+	</tr>
 
 <!--- Card 3 ------------------------ -->
-<div class="card-content">
-	<!-- <img src="img/Vans.jpg" alt="Vans"> -->
-	<h3>clientes</h3>
-	<!-- <p>Encontre Vans clicando no botão abaixo</p> -->
-	<button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="#Vans">Mostrar mais</button>
-</div>
-
-</div> <!-- card-sub-layer-1 -->
+	<tr>
+		<td>
+			<h5>Clientes</h5>
+		</td>
+		<td>
+			<!-- <img src="img/Vans.jpg" alt="Vans"> -->
+			<!-- <p>Encontre Vans clicando no botão abaixo</p> -->
+			<a href="addClient.php"><button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#Passeio">Adicionar</button></a>
+			<a href="edtClient.php"><button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="#Passeio">Editar</button></a>
+		</td>
+	</tr>
+	
+</table>
+<!-- </div> --> <!-- card-sub-layer-1 -->
 </div> <!-- CARD-CONTAINER -->
 <!-- ------------ CARDS - MASTER DIVS ------------ FECHAMENTO -->
 
@@ -161,35 +176,36 @@
 
 
 <!-- ------------ RODAPE ------------ INICIO -->
-
+<!-- 
 <div class="table-responsive">
-<table class="table">
-    <thead class="thead-dark">
-      <tr>
-        <th>Institucional</th>
-        <th>Negócios</th>
-        <th>Para você</th>
-      </tr>
-    </thead>
-    <tbody>
-        <tr class="table-active">
-            <td>Sobre a Locatec</td>
-            <td>Para Empresas</td>
-            <td>Minhas Reservas</td>
-        </tr>   
-        <!-- <tr class="table-active">
-            <td>Relação com o Investidor</td>
-            <td>Agências de Viagem</td>
-            <td>Roteiros de Viagem</td>
-        </tr>
-        <tr class="table-active">
-            <td>Trabalhe conosco</td>
-            <td>Seja um franqueado</td>
-            <td>Cadastra-se</td>
-        </tr> -->
-    </tbody>
-</table>
+	<table class="table">
+	    <thead class="thead-dark">
+	      <tr>
+	        <th>Institucional</th>
+	        <th>Negócios</th>
+	        <th>Para você</th>
+	      </tr>
+	    </thead>
+	    <tbody>
+	        <tr class="table-active">
+	            <td>Sobre a Locatec</td>
+	            <td>Para Empresas</td>
+	            <td>Minhas Reservas</td>
+	        </tr> -->   
+	        <!-- <tr class="table-active">
+	            <td>Relação com o Investidor</td>
+	            <td>Agências de Viagem</td>
+	            <td>Roteiros de Viagem</td>
+	        </tr>
+	        <tr class="table-active">
+	            <td>Trabalhe conosco</td>
+	            <td>Seja um franqueado</td>
+	            <td>Cadastra-se</td>
+	        </tr> -->
+	    <!--</tbody>
+	</table>
 </div>
+ -->
 <!-- ------------ RODAPE ------------ FIM -->
 
 <!--</div> BODY-CONTENT-LAYER-1 -->
