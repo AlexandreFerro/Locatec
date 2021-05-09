@@ -1,0 +1,318 @@
+/* --------------------------- CONTEXTO GERAL --------------------------- INICIO -- */
+body{
+/*background-color: #f0f0f0;*/
+    font: 18px arial;
+}
+
+#loginButton{
+    /* background: #cbcbcb; */
+    background: #fff;
+    float: right;
+    position: relative;
+    top: -40px;
+    border-radius: 10px;
+}
+
+form{
+    display: block;
+/*    background: #cbcbcb;*/
+/*    border: 2px solid #000;*/
+    padding: 40px;
+    line-height: 2;
+}
+/* --------------------------- CONTEXTO GERAL --------------------------- FIM -- */
+
+
+/* --------------------------- MENU --------------------------- INICIO -- */
+.navMain ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #b6cbff;
+}
+
+.navMain li {
+  float: left;
+}
+
+.navMain li a {
+	display: block;
+	color: black;
+	text-align: center;
+	margin: 0px 2px;
+	padding: 14px 16px;
+	width: 100px;
+	text-decoration: none;
+}
+
+.navMain li a:hover {
+  background-color: #111;
+	color: aliceblue;
+	border-radius: 8%;
+}
+
+.navMain .loginButton{
+	float: right;
+	margin: 0px 6px;
+}
+
+.navMain .activeMenu{
+	color: #fff; 
+	background: #6b93ff; 
+	font-weight: bold; 
+	border-radius: 8px;
+}
+/* --------------------------- MENU --------------------------- FIM -- */
+
+
+/* --------------------------- SUB-MENU 01 --------------------------- INICIO -- */
+#tabn {
+	/* PARA FINS DE ANALISE */
+/*	display: inline-block; */
+/*	float: left;*/
+	font-size: 14px;
+	background: #dde7ff;
+	margin: auto;
+	padding: 15px;
+	width: 100%;
+}
+/* --------------------------- SUB-MENU 01 --------------------------- FIM -- */
+
+
+/* --------------------------- CORPO PAGINA --------------------------- INICIO -- */
+.global-body-content{
+	margin: auto;
+}
+
+.global-body-content table{
+	margin: auto;
+	text-align: left;
+}
+
+.body-content-layer-1{
+	text-align: center;
+	margin-top: 40px;
+}
+
+.body-content-layer-1 a{
+	color: #1187cc;
+	background: #ddefff;
+	/* display: block; */
+	/* text-align: center; */
+	padding: 0px 6px;
+	border-radius: 2px;
+}
+
+/* --------------------------- CORPO PAGINA --------------------------- FIM -- */
+
+
+/* --------------------------- CARROUSEL --------------------------- INICIO -- */
+.carousel-inner{
+    /* Mesma cor do SLIDE 1 (gol #f5f5f5) */
+    background: #f5f5f5;
+/*	width: 200px;*/
+    height: 340px;
+	border: 1px dashed #b8b8b8;
+}
+
+/* Make the image fully responsive */
+.carousel-inner img {
+	width: auto;
+	height: 300px;
+	padding: 30px 5px;
+}
+
+#demo .carousel-indicators{
+    background: #cbcbcb;
+	width: 10%;
+	margin: auto;
+}
+
+#demo .link-slide-control a{
+/*	color: red;*/
+/*	background: #000;*/
+	width: 50%;
+	border: none;
+}
+
+/* ------------ SETA DE NAVEGACAO SLIDE ------------ INICIO */
+a .carousel-control-prev-icon{
+	padding: 30px;
+}
+a .carousel-control-next-icon{
+	padding: 30px;
+}
+	.carousel-control-prev{
+		/*    background: #000;*/
+	}
+	.carousel-control-next{
+		/*    background: #000;*/
+	}
+/* ------------ SETA DE NAVEGACAO SLIDE ------------ FIM */
+/* --------------------------- CARROUSEL --------------------------- FIM -- */
+
+
+/* --------------------------- CARDS --------------------------- INICIO -- */
+.card-container{
+/*	background: #ffdada;*/
+	width: 100%;
+	margin: auto;
+	text-align: center;
+}
+
+.card-content{
+/*	background: #ffc7c7;*/
+	width: 360px;
+	height: auto;
+	margin: 10px;
+	padding: 10px;
+	display: inline-block;
+	border: 1px dashed #b8b8b8;
+}
+
+.card-content img{
+/*	width: 245px;*/
+	width: inherit;
+	height: 170px;
+	padding-right: 12px;
+}
+
+.card-sub-txt{
+	background: #fffce4;
+	width: 800px;
+	margin: auto;
+	padding: 10px;
+	border: 1px dashed #b8b8b8;
+	font-size: 14px;
+}
+
+.card-sub-txt p{
+	margin-left: 15px;
+}
+/* --------------------------- CARDS --------------------------- FIM -- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+-------------------------------------------------- INICIO - CONTEUDO NAO IDENTIFICADO
+
+ESSE CONTEUDO CAUSA ALGUM BUG NA TRANSICAO DE IMAGEM ENTRE CARROUSEL E CARDS
+
+
+.navbar-default .navbar-nav > li > a {
+    font-size: 26px;
+}
+
+.form{
+	width: 400px;
+	margin: auto;
+	padding-top: 40px;
+}
+
+.card{
+	box-shadow: 1px 1px 5px #ccc;
+	padding: 30px;
+	border-radius: 5px;
+}
+
+.card-top{
+	text-align: center;
+}
+
+.card-top{
+	text-align:center;
+}
+
+.card-group > label{
+	width: 100%;
+	color: rgb(75,75,75);
+	display: block;
+}
+
+.card-group > input{
+	border-radius: 5px;
+	outline: 0;
+	width: 100%;
+	height: 25px;
+	padding: 5px;
+}
+
+.card-group > button{
+	background-color: #dc3545;
+	width: 100%;
+	border-radius: 30px;
+	padding: 15px;
+	color: white;
+	border: 0px;
+	outline: 0px;
+}
+
+.imglogin{
+	border-radius: 50px;
+	width: 100px;
+	box-shadow: 10px 10px 5px #ccc;
+}
+
+.title{
+	color: #dc3545;
+}
+-------------------------------------------------- FIM - CONTEUDO NAO IDENTIFICADO
+*/
+
+
+/* Tabbed example */
+div.tabs {
+  min-height: 7em;		/* No height: can grow if :target doesn't work */
+  position: relative;		/* Establish a containing block */
+  line-height: 1;		/* Easier to calculate with */
+  z-index: 0}			/* So that we can put other things behind */
+  
+div.tabs > div {
+  display: inline}		/* We want the buttons all on one line */
+
+div.tabs > div > a {
+  color: black;			/* Looks more like a button than a link */
+  background: #CCC;		/* Active tabs are light gray */
+  padding: 0.2em;		/* Some breathing space */
+  border: 0.1em outset #BBB;	/* Make it look like a button */
+  border-bottom: 0.1em solid #CCC} /* Visually connect tab and tab body */
+
+div.tabs > div:not(:target) > a {
+  border-bottom: none;		/* Make the bottom border disappear */
+  background: #999}		/* Inactive tabs are dark gray */
+
+div.tabs > div:target > a,	/* Apply to the targeted item or... */
+:target #default2 > a {		/* ... to the default item */
+  border-bottom: 0.1em solid #CCC; /* Visually connect tab and tab body */
+  background: #CCC}		/* Active tab is light gray */
+
+div.tabs > div > div {
+  background: #CCC;		/* Light gray */
+  z-index: -2;			/* Behind, because the borders overlap */
+  left: 0; top: 1.3em;		/* The top needs some calculation... */
+  bottom: 0; right: 0;		/* Other sides flush with containing block */
+  overflow: auto;		/* Scroll bar if needed */
+  padding: 0.3em;		/* Looks better */
+  border: 0.1em outset #BBB}	/* 3D look */
+
+div.tabs > div:not(:target) > div { /* Protect CSS1 & CSS2 browsers */
+  position: absolute }		/* All these DIVs overlap */
+
+div.tabs > div:target > div, :target #default2 > div {
+  position: absolute;		/* All these DIVs overlap */
+  z-index: -1}			/* Raise it above the others */
+
+div.tabs :target {
+  outline: none
+}
