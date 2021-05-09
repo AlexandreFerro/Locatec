@@ -23,33 +23,33 @@
 <body> <!----------------------------------- INICIO CORPO DO SITE -->
 <div class="container-fluid">
   <h1>
-    <b><a href="index.html">Locatec</a></b>
+    <b><a href="http://localhost">Locatec</a></b>
   </h1>
 </div>
 
 
 <!------- MENU ----------- INICIO -->
 <nav class="navMain">
-    <ul style="background: #ff9999;">
+    <ul> <!--  style="background: #ff9999;" -->
         <li>
 			<a href="#tab1" data-toggle="collapse" data-target="#tabn">Locação</a>
 		</li>
         <li>
-			<a href="Frotas.html">Frotas</a>
+			<a href="http://localhost/Frotas.html">Frotas</a>
 		</li>
         <li>
-			<a href="cadastro.html">Clientes</a>
+			<a href="http://localhost/cadastro.html">Clientes</a>
 		</li>
         <li>
-			<a href="locacao.html">Veículos</a>
+			<a href="http://localhost/locacao.html">Veículos</a>
 		</li>
 		
-		<div class="loginButton" style="background: red; border-radius: 10px;">
+		<div class="loginButton">
 			<li>
-				<a href="login.html" style="color: aliceblue; font-weight: bold;">UserName</a>	<!--	LOGIN	-->
+				<a href="#login.html" class="activeMenu" style="font-weight: bold;">Admin</a>	<!--	LOGIN	-->
 			</li>
 			<li>
-				<a href="cadastro.html" style="color: aliceblue; font-weight: bold;">Logoff</a>	<!--	CADASTRO	-->
+				<a href="#cadastro.html" style="font-weight: bold;">Logoff</a>	<!--	CADASTRO	-->
 			</li>
 		</div>
     </ul>
