@@ -42,7 +42,7 @@ form{
 	text-align: center;
 	margin: 0px 2px;
 	padding: 14px 16px;
-	width: 100px;
+	/* width: 100px; */
 	text-decoration: none;
 }
 
@@ -53,8 +53,6 @@ form{
 }
 
 .navMain .loginButton{
-	/* background: #1187cc; */
-	/*background: #b8b8b8;*/ /*test*/
 	float: right;
 	margin: 0px 6px;
 	border-radius: 8%;
@@ -87,11 +85,11 @@ form{
 	/* PARA FINS DE ANALISE */
 /*	display: inline-block; */
 /*	float: left;*/
+/* width: 100%; */
 	font-size: 14px;
 	background: #dde7ff;
 	margin: auto;
 	padding: 15px;
-	width: 100%;
 }
 /* --------------------------- SUB-MENU 01 --------------------------- FIM -- */
 
@@ -114,15 +112,10 @@ form{
 .body-content-layer-1 a{
 	color: #1187cc;
 	background: #ddefff;
-	/* display: block; */
-	/* text-align: center; */
 	padding: 0px 6px;
 	border-radius: 2px;
 }
-
 /* --------------------------- CORPO PAGINA --------------------------- FIM -- */
-
-
 
 
 /* --------------------------- CARDS --------------------------- INICIO -- */
@@ -140,7 +133,6 @@ form{
 	border: 1px dashed #b8b8b8;
 	border-radius: 4px;
 }
-
 
 /* --------------------------- CARDS --------------------------- FIM -- */
 
