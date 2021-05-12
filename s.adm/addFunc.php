@@ -5,6 +5,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="css/main.css">
+<link rel="icon" href="http://localhost/img/favicon/fav5.jpg" type="image/jpg" sizes="32x32">
     
 <!-- [Sidnei] SINCRONIZA A PAGINA A CADA 30 segundos -->
 <!-- <meta http-equiv="refresh" content="5">  -->
@@ -21,33 +22,33 @@
 <!----------------------------------- INICIO CORPO DO SITE -->
 <div class="container-fluid">
   <h1>
-    <b><a href="index.html">Locatec</a></b>
+    <b><a href="http://localhost">Locatec</a>  > Add Funcionario </b>
   </h1>
-</div> 
+</div>
 
 
 <!------- MENU ----------- INICIO -->
 <nav class="navMain">
-    <ul>
+    <ul> <!--  style="background: #ff9999;" -->
         <li>
 			<a href="#tab1" data-toggle="collapse" data-target="#tabn">Locação</a>
 		</li>
         <li>
-			<a href="Frotas.html">Frotas</a>
+			<a href="http://localhost/Frotas.html">Frotas</a>
 		</li>
         <li>
-			<a href="cadastro.html">Clientes</a>
+			<a href="http://localhost/cadastro.html">Clientes</a>
 		</li>
         <li>
-			<a href="locacao.html">Veículos</a>
+			<a href="http://localhost/locacao.html">Veículos</a>
 		</li>
 		
 		<div class="loginButton">
 			<li>
-				<a href="login.html">Login</a>	<!--	LOGIN	-->
+				<a href="#login.html" class="activeMenu" style="font-weight: bold;">$userName</a>	<!--	LOGIN	-->
 			</li>
 			<li>
-				<a href="cadastro.html" class="activeMenu">Cadastrar</a>	<!--	CADASTRO	-->
+				<a href="#cadastro.html" style="font-weight: bold;">$Logoff</a>	<!--	CADASTRO	-->
 			</li>
 		</div>
     </ul>
@@ -82,7 +83,6 @@
 					<td>
 					</td>
 					<td>
-						<!--  -->
 					</td>
 					<td>
 				<label>Data/Hora Devolução </label>
@@ -104,7 +104,6 @@
 				   id="buscar" onclick="location.href='Confirmação.html'"><br>
 					</td>
 				</tr>
-				
 			</table>
 		</div>
 	</div>
@@ -116,16 +115,16 @@
 <div class="global-body-content">
 <div class="body-content-layer-1">
 
-<H1>Cadastro de cliente</H1>
+<H1>Adicionar usuário</H1>
 
-<form method="POST" action="cadastro.php">
+<form method="POST" action="processConfirm.php">
     <table>
         <tr>
             <td>
                 <label><b style="color: red;">*</b> Nome</label>
             </td>
             <td>
-                <input type="text" name="cadFirstName" required autofocus><br>
+                <input type="text" name="userFirstName" required autofocus><br>
             </td>
         </tr>
         <tr>
@@ -133,7 +132,15 @@
                 <label><b style="color: red;">*</b> Sobrenome</label>
             </td>
             <td>
-                <input type="text" name="cadLastName" required><br>
+                <input type="text" name="userLastName" required><br>
+            </td>    
+        </tr>
+		<tr>
+            <td>
+                <label><b style="color: red;">*</b> CPF</label>
+            </td>
+            <td>
+                <input type="text" name="userCPF" required><br>
             </td>    
         </tr>
         <tr>
@@ -141,7 +148,15 @@
                 <label><b style="color: red;">*</b> Email</label>
             </td>
             <td>
-                <input type="email" name="cadEmail" required><br>
+                <input type="email" name="userEmail" required><br>
+            </td>    
+        </tr>
+		<tr>
+            <td>
+                <label><b style="color: red;">*</b> Login</label>
+            </td>
+            <td>
+                <input type="text" name="userLogin" required><br>
             </td>    
         </tr>
         <tr>
@@ -149,7 +164,7 @@
                 <label><b style="color: red;">*</b> Senha</label>
             </td>
             <td>
-                <input type="password" name="cadSenha" required><br>
+                <input type="password" name="userPass" required><br>
             </td>    
         </tr>
         <tr>
@@ -164,6 +179,7 @@
     </table>
 </form>
 
+<!--
 <br>
 <a href="login.html">Já possui login? Acesse aqui.</a>
 <br>
@@ -174,6 +190,7 @@
 
 
 <!------- LEMBRETE ----------- INICIO -->
+<!--
 <div style="margin-top: 140px;">
 	<h4 style="color: red;">Lembrete:</h4>
 	<h5>
@@ -182,6 +199,7 @@
 		</p>
 	</h5>
 </div>
+-->
 <!------- LEMBRETE ----------- FIM -->
 
 
