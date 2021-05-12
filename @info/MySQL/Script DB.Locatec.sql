@@ -10,7 +10,7 @@ userLastName varchar(60) not null,
 userCPF varchar(12) not null,
 userEmail varchar(100) not all,
 userLogin varchar(8) not null,
-userPass varchar(45) not null,
+userPass varchar(45) not null
 
 -- FOREIGN KEY (EMPLOYEE_COMPANY) REFERENCES COMPANY_TABLE(COMPANY_ID)
 );
