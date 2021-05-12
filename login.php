@@ -5,6 +5,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel = "stylesheet" href = "css/style.css">
+<link rel="icon" href="http://localhost/img/favicon/fav5.jpg" type="image/jpg" sizes="32x32">
 
 <!--Google fonts-->
 <!--    <link rel="preconnect" href="https://fonts.gstatic.com">-->
@@ -61,7 +62,7 @@ $con = mysqli_connect("localhost","root","","locatec"); //IP(hostname) - User - 
 
 $result = mysqli_query($con,"select * from usuarios where email = '$email' and senha = '$senha'") 
 				or die("Erro na query solicitada; 
-					<br>ERROR.MSG: " .mysqli_error($result));
+					<br>ERROR.MSG: " .mysqli_error($con, $result));
 
 	//------------ PARA FINS DE TESTE E VALIDACAO DA QUERY -------------- INICIO
 		// echo "depois da query - OK <br>";
