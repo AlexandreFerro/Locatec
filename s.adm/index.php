@@ -7,6 +7,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel = "stylesheet" href = "css/main.css">
+<link rel="icon" href="http://localhost/img/favicon/fav5.jpg" type="image/jpg" sizes="32x32">
 
 <!-- [Sidnei] SINCRONIZA A PAGINA A CADA 30 segundos -->
 <meta http-equiv="refresh" content="5">
@@ -18,7 +19,7 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 </head>
-    
+
     
 <body> <!----------------------------------- INICIO CORPO DO SITE -->
 <div class="container-fluid">
@@ -46,10 +47,10 @@
 		
 		<div class="loginButton">
 			<li>
-				<a href="#login.html" class="activeMenu" style="font-weight: bold;">Admin</a>	<!--	LOGIN	-->
+				<a href="#login.html" class="activeMenu" style="font-weight: bold;">$userName</a>	<!--	LOGIN	-->
 			</li>
 			<li>
-				<a href="#cadastro.html" style="font-weight: bold;">Logoff</a>	<!--	CADASTRO	-->
+				<a href="#cadastro.html" style="font-weight: bold;">$Logoff</a>	<!--	CADASTRO	-->
 			</li>
 		</div>
     </ul>
