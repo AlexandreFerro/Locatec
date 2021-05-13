@@ -2,17 +2,17 @@
 <html>
 <head>
 
-  <title>Locatec | INICIO</title>
-  
+  <title>Locatec</title>
+
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel = "stylesheet" href = "css/style.css">
-    
+<link rel = "stylesheet" href = "css/main.css">
+<link rel="icon" href="http://localhost/img/favicon/fav5.jpg" type="image/jpg" sizes="32x32">
+
 <!-- [Sidnei] SINCRONIZA A PAGINA A CADA 30 segundos -->
-<!--<meta http-equiv="refresh" content="5"> -->
-<link rel = "stylesheet" href = "css/style.css">
-    
-    
+<meta http-equiv="refresh" content="5">
+
+
 <!------------------------------------------------ Bootstrap CSS -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
@@ -24,34 +24,33 @@
 <body> <!----------------------------------- INICIO CORPO DO SITE -->
 <div class="container-fluid">
   <h1>
-    <b><a href="index.html">Locatec</a></b>
+    <b><a href="http://localhost">Locatec</a></b>
   </h1>
 </div>
 
 
-
 <!------- MENU ----------- INICIO -->
 <nav class="navMain">
-    <ul>
+    <ul> <!--  style="background: #ff9999;" -->
         <li>
 			<a href="#tab1" data-toggle="collapse" data-target="#tabn">Locação</a>
 		</li>
         <li>
-			<a href="Frotas.html">Frotas</a>
+			<a href="http://localhost/Frotas.html">Frotas</a>
 		</li>
         <li>
-			<a href="cadastro.html">Clientes</a>
+			<a href="http://localhost/cadastro.html">Clientes</a>
 		</li>
         <li>
-			<a href="locacao.html">Veículos</a>
+			<a href="http://localhost/locacao.html">Veículos</a>
 		</li>
 		
 		<div class="loginButton">
 			<li>
-				<a href="login.html">Login</a>	<!--	LOGIN	-->
+				<a href="#login.html" class="activeMenu" style="font-weight: bold;">Admin</a>	<!--	LOGIN	-->
 			</li>
 			<li>
-				<a href="cadastro.html">Cadastrar</a>	<!--	CADASTRO	-->
+				<a href="#cadastro.html" style="font-weight: bold;">Logoff</a>	<!--	CADASTRO	-->
 			</li>
 		</div>
     </ul>
@@ -68,7 +67,7 @@
 			
 			<h5>Alugar</h5>
 			<table>
-				<tr>
+				<tr> <!-- LINHA 01 - INICIO -->
 					<td>
 				<label>Local de retirada </label>
 					</td>
@@ -81,8 +80,8 @@
 					<td>
 				<input type="date" name="datahoraretira"><br>
 					</td>
-				</tr>
-				<tr>
+				</tr> 
+				<tr> <!-- LINHA 02 - INICIO -->
 					<td>
 					</td>
 					<td>
@@ -93,10 +92,6 @@
 					<td>
 				<input type="date" name="datahoradevolucao"><br>
 					</td>
-<!--
-				</tr>
-				<tr>
--->
 					<td>
 					</td>
 					<td>
@@ -104,11 +99,10 @@
 					<td>
 					</td>
 					<td>
-			<input type="submit" value="buscar" name="buscar" 
-				   id="buscar" onclick="location.href='Confirmação.html'"><br>
+				<input type="submit" value="buscar" name="buscar" 
+					id="buscar" onclick="location.href='Confirmação.html'"><br>
 					</td>
 				</tr>
-				
 			</table>
 		</div>
 	</div>
@@ -122,250 +116,98 @@
 <!--<div class="body-content-layer-1">-->
 
 
-<!------- Carrousel ----------- INICIO -->
- 
-<div id="demo" class="carousel slide" data-ride="carousel">
-  <!-- The slideshow -->
-
-  <div class="carousel-inner" style="text-align: center;">
-    <div class="carousel-item active">
-        <img src="img/Gol 2019.png" width="400" height="100">
-    </div>
-    <div class="carousel-item">
-        <img src="img/Saveiro.png" width="400" height="100">
-    </div>
-    <div class="carousel-item">
-        <img src="img/Van-Kia.png" width="400" height="100">
-    </div>
-  </div>
-          
-  <!-- Indicator bar bellow -->
-  <ul class="carousel-indicators">
-    <li data-target="#demo" data-slide-to="0" class="active"></li>
-    <li data-target="#demo" data-slide-to="1"></li>
-    <li data-target="#demo" data-slide-to="2"></li>
-  </ul>
-  
-  <!-- Left and right controls -->
-	<div class="link-slide-control">
-  		<a class="carousel-control-prev" href="#demo" data-slide="prev">
-  		  <span class="carousel-control-prev-icon"></span>
-  		</a>
-  		<a class="carousel-control-next" href="#demo" data-slide="next">
-  		  <span class="carousel-control-next-icon"></span>
-  		</a>
-	</div>
-</div>
-<center>
-</center>
-
-
-<!------- Carrousel ----------- FIM -->
-	
-
-<br>
 
 <!--- CARDS TITULO ------------------------ -->
-<div style="margin-left: 30px;">
-	<h2> Veículos </h2>
-	<p class="blockquote-footer">Encontre seu veículo</p>
+<div style="margin: 0px 100px; margin-top: 80px;">
+	<h2>Ferramentas do administrador</h2>
+	<p style="color:dimgray;"> - Ferramentas para administração de funcionários e cadastros.</p>
 </div>
-
-<br>
 
 
 <!-- ------------ CARDS - MASTER DIVS ------------ INICIO -->
 <div class="card-container">
-<div class="card-sub-layer-1">
 
-
+<table class="card-content">
 <!--- Card 1 ------------------------ -->
-<div class="card-content">
-	<img src="img/Gol G6.png" alt="">
-		<h3>Passeio</h3>
-		<p>Encontre veículos de passeio no botão abaixo</p>
-		<button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="#Passeio">Mostrar mais</button>
-		
-</div>
-
+	<tr>
+		<td>
+			<h5>Veículos</h5>
+		</td>
+		<td>
+			<!-- <img src="" alt="txt"> -->
+			<!-- <p>Encontre veículos de passeio no botão abaixo</p> -->
+			<a href="addVeic.php"><button type="button" class="btn btn-primary">Adicionar</button></a>
+			<a href="edtVeic.php"><button type="button" class="btn btn-secondary">Editar</button></a>
+		</td>
+	</tr>
+	
 <!--- Card 2 ------------------------ -->
-<div class="card-content">
-	<img src="img/Utilitários.png" alt="Utilitários">
-	<h3>Utilitários</h3>
-	<p>Encontre utilitários clicando no botão abaixo</p>
-		<button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="#Utilitários">Mostrar mais</button>
-		
-</div>
+	<tr>
+		<td>
+			<h5>Funcionários</h5>
+		</td>
+		<td>
+			<!-- <img src="img/Utilitários.png" alt="Utilitários"> -->
+			<!-- <p>Encontre utilitários clicando no botão abaixo</p> -->
+			<a href="addFunc.php"><button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#Passeio">Adicionar</button></a>
+			<a href="edtFunc.php"><button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="#Passeio">Editar</button></a>
+		</td>
+	</tr>
 
 <!--- Card 3 ------------------------ -->
-<div class="card-content">
-	<img src="img/Vans.jpg" alt="Vans">
-	<h3>Vans</h3>
-	<p>Encontre Vans clicando no botão abaixo</p>
-		<button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="#Vans">Mostrar mais</button>
-
-</div>
-
-</div> <!-- card-sub-layer-1 -->
+	<tr>
+		<td>
+			<h5>Clientes</h5>
+		</td>
+		<td>
+			<!-- <img src="img/Vans.jpg" alt="Vans"> -->
+			<!-- <p>Encontre Vans clicando no botão abaixo</p> -->
+			<a href="addClient.php"><button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#Passeio">Adicionar</button></a>
+			<a href="edtClient.php"><button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="#Passeio">Editar</button></a>
+		</td>
+	</tr>
+	
+</table>
+<!-- </div> --> <!-- card-sub-layer-1 -->
 </div> <!-- CARD-CONTAINER -->
 <!-- ------------ CARDS - MASTER DIVS ------------ FECHAMENTO -->
 
-<br>
 
-<!-- ------------ CARDS - SUB-TEXT ------------ ABERTURA -->
-<div id="Passeio" class="collapse">
-	<div class="card-sub-txt">
-	<b>Lazer...</b><br>
-	<p>Gol é um automóvel da Volkswagen, desenhado no Brasil e comercializado em vários países sob diversas designações, dentre eles México e Argentina.</p>
-	<p>O Gol é considerado um dos maiores sucessos da Volkswagen do Brasil de todos os tempos. É também o primeiro e único carro brasileiro a ultrapassar a marca de 5 milhões de unidades produzidas até hoje.</p>
-	</div>
-</div>
+<div style="margin: 100px 100px;"></div>
 
-<div id="Utilitários" class="collapse">
-	<div class="card-sub-txt">
-	<b>Utilitários...</b>
-	<p>Os utilitários representam hoje um segmento importante no mercado de veículos brasileiro e mundial.</p>
-	<p>Eles estão por toda parte: nas ruas, estradas, na cidade e no campo. Os veículos utilitários são modelos que servem tanto para transporte de cargas como para levar pessoas, com finalidade comercial ou não.</p>
-	<p>Também muito utilizados por empresas, os veículos utilitários leves possuem maior espaço interno para dar maior conforto para os passageiros, bem como comportam um amplo espaço para a carga. Normalmente, também são carros mais potentes que garantem bom desempenho, além de segurança aos passageiros.</p>
-	</div>
-</div>
-
-<div id="Vans" class="collapse">
-	<div class="card-sub-txt">
-	<b>Vans...</b><br>
-	<p>A palavra van deriva da palavra inglesa caravan, que originalmente designava as carruagens cobertas de tecido, (muito utilizadas no período do Velho Oeste americano).</p>
-	<p>Note-se que, em Portugal, a palavra camioneta é também usada para veículos pesados de passageiros (autocarros em Portugal, ônibus no Brasil) que ligam localidades diferentes, sendo, nesta situação, sinónimo de autocarro.</p>
-	</div>
-</div>
-<!-- ------------ CARDS - SUB-TEXT ------------ FIM -->
-
-<br>
-
-<!--Media Object-->
-<div class="border w-100">
-test - Fora da caixa
-<div class="card bg-dark text-white">
-
-<br/>
-<div class="container-fluid">
-<div class="row">
-<div class="col-sm-6">
-  <img class="img-fluid" src="img/honda.png" class="mr-20 mt-20" style="width:360px">
-	<p>Serviços Oferecidos</p>  
-</div>
-  <div class="col-sm-6">
-  <div class="media-body">
-  <p>
-    Dentre os serviços oferecidos na plataforma você pode encontrar alguéis de motos, carros, lanchas e até  caminhões. 
-  A qualquer hora do dia você pode locar o ítem desejado com profissionais a disposição para atendê-lo, de domingo a domingo. 
-  </p>
-
-  </div>
-  </div>
-  </div>
-
-<br/> 
-<div class="container-fluid">
-<div class="border w-100">
-</div>
-</div>
-
-<br/>
-
-<div class="container-fluid">
-<div class="row">
-<div class="col-sm-6">
-  <img class="img-fluid" src="img/Hyundai HR.png" class="mr-20 mt-20" style="width:360px">
-	<p>Veículos Cadastrados</p>
-  </div>
-  <div class="col-sm-6">
-  <div class="media-body">
-  <p> 
-  
-  Aqui você pode contar com uma variada frota de veículos, de acordo com a sua necessidade. Procure em 
-  nosso show room o tipo de carro, utilitário ou van que precisa e contrate já.
-  
-</p>
-  
-  </div>
-  </div>
-  </div>
-  </div>
-  
-<br/>
-<div class="container-fluid">
-<div class="border w-100">
-</div>
-</div>
-<br/>
-
-<div class="container-fluid">
-<div class="row">
-<div class="col-sm-6">
-  <img class="img-fluid" src="img/Kia Bongo.png" alt="Kia Bongo" class="mr-20 mt-20" style="width:360px">
-  <p>Volume de negócios</p>
-  </div>
-  <div class="col-sm-6">
-  <div class="media-body">
-  <p>
-  
-	 Por dia são feitas dezenas de contratações dentre os diversos modelos disponíveis. 
-	 O volume de aluguéis da Locatec é computado em tempo real aqui. 
-	
-</p>
- 
-  </div>
-  </div>
-  </div>
-  </div>
-
-
-  
-<br/>
-<div class="container-fluid">
-<div class="border w-100">
-</div>
-</div>
-<br/>
-<br/>
-
-</div>
-</div>
-</div>
-<br>
 
 <!-- ------------ RODAPE ------------ INICIO -->
-<!--Tabela-->
-
+<!-- 
 <div class="table-responsive">
-<table class="table">
-    <thead class="thead-dark">
-      <tr>
-        <th>Institucional</th>
-        <th>Negócios</th>
-        <th>Para você</th>
-      </tr>
-    </thead>
-    <tbody>
-        <tr class="table-active">
-            <td>Sobre a Locatec</td>
-            <td>Para Empresas</td>
-            <td>Minhas Reservas</td>
-        </tr>   
-        <tr class="table-active">
-            <td>Relação com o Investidor</td>
-            <td>Agências de Viagem</td>
-            <td>Roteiros de Viagem</td>
-        </tr>
-        <tr class="table-active">
-            <td>Trabalhe conosco</td>
-            <td>Seja um franqueado</td>
-            <td>Cadastra-se</td>
-        </tr>
-    </tbody>
-</table>
+	<table class="table">
+	    <thead class="thead-dark">
+	      <tr>
+	        <th>Institucional</th>
+	        <th>Negócios</th>
+	        <th>Para você</th>
+	      </tr>
+	    </thead>
+	    <tbody>
+	        <tr class="table-active">
+	            <td>Sobre a Locatec</td>
+	            <td>Para Empresas</td>
+	            <td>Minhas Reservas</td>
+	        </tr> -->   
+	        <!-- <tr class="table-active">
+	            <td>Relação com o Investidor</td>
+	            <td>Agências de Viagem</td>
+	            <td>Roteiros de Viagem</td>
+	        </tr>
+	        <tr class="table-active">
+	            <td>Trabalhe conosco</td>
+	            <td>Seja um franqueado</td>
+	            <td>Cadastra-se</td>
+	        </tr> -->
+	    <!--</tbody>
+	</table>
 </div>
-
+ -->
+<!-- ------------ RODAPE ------------ FIM -->
 
 <!--</div> BODY-CONTENT-LAYER-1 -->
 </div> <!-- GLOBAL BODY CONTENT -->
