@@ -5,6 +5,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel = "stylesheet" href = "css/main.css">
+<link rel="icon" href="http://localhost/img/favicon/fav5.jpg" type="image/jpg" sizes="32x32">
     
 <!-- [Sidnei] SINCRONIZA A PAGINA A CADA 30 segundos -->
 <!--<meta http-equiv="refresh" content="10"; url="cadastro.html"/>-->
@@ -28,27 +29,51 @@
 
 <!-- ---------------------------------------------- INICIO PHP -->
 <?php
-	
+	mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
 //"delete from usuarios" 
 	//(apaga todos os registros da tabela) - Apos testes...
 
-	$nome = $_POST['cadFirstName'];
-	$sobrenome = $_POST['cadLastName'];
-	$email = $_POST['cadEmail'];
-	$senha = sha1($_POST['cadSenha']);
+	$data = date("y/m/d");
+	$nome = $_POST['userFirstName'];
+	$sobrenome = $_POST['userLastName'];
+	$cpf = $_POST['userCPF'];
+	$email = $_POST['userEmail'];
+	$login = $_POST['userLogin'];
+	$senha = sha1($_POST['userPass']);
 
 //===================== Cria a string de conexão $strcon
 
 $strcon = mysqli_connect('127.0.0.1','root','','locatec') 
     or die('Erro ao conectar ao banco de dados');
-$sql = "INSERT INTO usuarios VALUES ";
-$sql .= "('$nome', '$sobrenome', '$email', '$senha')";
 
-mysqli_query($strcon,$sql)
-	or die("Erro ao tentar cadastrar registro");
+$sql = "SELECT userId, userLogin, userCPF, userEmail FROM usuarios"; //Query não está conectando
+
+
+$result = mysqli_query($strcon,$sql);
+//or die("Erro ao tentar cadastrar registro");
 mysqli_close($strcon);
 
-echo "Cadastrado com sucesso!";
+
+$row = mysqli_fetch_array($result);
+$test = print_r($row);
+echo "<div style='font-size=8px;'>$test</div>";
+
+
+die();
+
+if($login == isset($row['userLogin'])){
+	echo "<br> Usuário já existe, tente outro usuário... <br>";
+	echo "usuário digitado: ".$login;
+	die("<br> Redirecionando... <a href='addFunc.php'>Retornar</a>");
+
+}else{
+
+	$sqlin = "INSERT INTO usuarios VALUES ";
+	$sqlin .= "('','$data','$nome', '$sobrenome', '$cpf', '$email', '$login', '$senha')";
+}
+
+
+echo "Cadastrado com sucesso!"."<br> - ".$data;
 //	} // ELSE -- FIM
 ?>
 <!-- ---------------------------------------------- FIM PHP -->
