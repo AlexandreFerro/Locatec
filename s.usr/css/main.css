@@ -1,0 +1,146 @@
+/* --------------------------- CONTEXTO GERAL --------------------------- INICIO -- */
+body{
+/*background-color: #f0f0f0;*/
+    font: 18px arial;
+}
+
+#loginButton{
+    /* background: #cbcbcb; */
+    background: #fff;
+    float: right;
+    position: relative;
+    /* top: -40px; */
+    border-radius: 10px;
+}
+
+form{
+    display: block;
+/*    background: #cbcbcb;*/
+/*    border: 2px solid #000;*/
+    padding: 40px;
+    line-height: 2;
+}
+/* --------------------------- CONTEXTO GERAL --------------------------- FIM -- */
+
+
+/* --------------------------- MENU --------------------------- INICIO -- */
+.navMain ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #b6cbff;
+}
+
+.navMain li {
+  float: left;
+}
+
+.navMain li a {
+	display: block;
+	color: black;
+	text-align: center;
+	margin: 0px 2px;
+	padding: 14px 16px;
+	width: 100px;
+	text-decoration: none;
+}
+
+.navMain li a:hover {
+	background-color: #111;
+	color: aliceblue;
+	border-radius: 8%;
+}
+
+.navMain .loginButton{
+	/* background: #1187cc; */
+	/*background: #b8b8b8;*/ /*test*/
+	float: right;
+	margin: 0px 6px;
+	border-radius: 8%;
+}
+
+.navMain .activeMenu{
+	color: #fff; 
+	background: #ff6b6b; 
+	font-weight: bold; 
+	border-radius: 8px;
+}
+
+/* APENAS PARA DESTACAR LINKS DE TESTE */
+/*
+.nav-link-test{
+	background: rgb(228, 228, 228);
+	margin: 5px;
+	padding: 10px;
+	border-radius: 5px;
+	font-weight: bold;
+	display: block;
+	float: right;
+}
+*/
+/* --------------------------- MENU --------------------------- FIM -- */
+
+
+/* --------------------------- SUB-MENU 01 --------------------------- INICIO -- */
+#tabn {
+	/* PARA FINS DE ANALISE */
+/*	display: inline-block; */
+/*	float: left;*/
+	font-size: 14px;
+	background: #dde7ff;
+	margin: auto;
+	padding: 15px;
+	width: 100%;
+}
+/* --------------------------- SUB-MENU 01 --------------------------- FIM -- */
+
+
+/* --------------------------- CORPO PAGINA --------------------------- INICIO -- */
+.global-body-content{
+	margin: auto;
+}
+
+.global-body-content table{
+	margin: auto;
+	text-align: left;
+}
+
+.body-content-layer-1{
+	text-align: center;
+	margin-top: 40px;
+}
+
+.body-content-layer-1 a{
+	color: #1187cc;
+	background: #ddefff;
+	/* display: block; */
+	/* text-align: center; */
+	padding: 0px 6px;
+	border-radius: 2px;
+}
+
+/* --------------------------- CORPO PAGINA --------------------------- FIM -- */
+
+
+
+
+/* --------------------------- CARDS --------------------------- INICIO -- */
+.card-container{
+	/* background: #ffdada; linha comentada */
+	width: 100%;
+	margin-top: 50px;
+}
+
+.card-content td{
+	/* background: #ffdada; linha comentada */
+	width: 60%;
+	margin: 10px;
+	padding: 10px;
+	border: 1px dashed #b8b8b8;
+	border-radius: 4px;
+}
+
+
+/* --------------------------- CARDS --------------------------- FIM -- */
+
