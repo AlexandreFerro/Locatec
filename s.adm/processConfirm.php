@@ -55,6 +55,8 @@ mysqli_close($strcon);
 
 
 $row = mysqli_fetch_array($result);
+
+//=============================== EM ANALISE
 $test = print_r($row);
 echo "<div style='font-size=8px;'>$test</div>";
 
