@@ -33,8 +33,8 @@
 <!-- ---------------------------------------------- INICIO PHP -->
 <?php
 
-$email = $_POST['email'];
-$senha = sha1($_POST['senha']); //Transforma a senha recebida em HASH para validar com a HASH salva no BD
+$email = $_POST['userEmail'];
+$senha = sha1($_POST['userPass']); //Transforma a senha recebida em HASH para validar com a HASH salva no BD
 
 
 //================================= Seguranca contra SQL INJECTION
@@ -60,9 +60,9 @@ $con = mysqli_connect("localhost","root","","locatec"); //IP(hostname) - User - 
 		// echo "antes da query - OK <br>";
 	//------------ PARA FINS DE TESTE E VALIDACAO DA QUERY -------------- FIM
 
-$result = mysqli_query($con,"select * from usuarios where email = '$email' and senha = '$senha'") 
+$result = mysqli_query($con,"select * from usuarios where userEmail = '$email' and userPass = '$senha'") 
 				or die("Erro na query solicitada; 
-					<br>ERROR.MSG: " .mysqli_error($con, $result));
+					<br>ERROR.MSG: "); // .mysqli_error($result));
 
 	//------------ PARA FINS DE TESTE E VALIDACAO DA QUERY -------------- INICIO
 		// echo "depois da query - OK <br>";
