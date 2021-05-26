@@ -10,9 +10,10 @@ userLastName varchar(60) not null,
 userCPF varchar(12) not null,
 userEmail varchar(100) not all,
 userLogin varchar(8) not null,
-userPass varchar(45) not null
+userPass varchar(45) not null,
+userTipo int not null
 
--- FOREIGN KEY (EMPLOYEE_COMPANY) REFERENCES COMPANY_TABLE(COMPANY_ID)
+	FOREIGN KEY (userTipo) REFERENCES USER_TYPE(utId)
 );
 
 create table VEICULOS(
@@ -31,4 +32,12 @@ vcDocNum varchar(20) not null,
 vcDocVenc date not null,
 vcPlaca varchar(8) not null,
 vcValor float not null
+);
+
+create table USER_TYPE(
+	utId int PRIMARY KEY not null,
+	utDescricao varchar(14)
+		/*administrador
+		--empregado
+		--cliente*/
 );
