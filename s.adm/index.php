@@ -144,28 +144,28 @@
 <!--- Card 2 ------------------------ -->
 	<tr>
 		<td>
-			<h5>Funcionários</h5>
+			<h5>Usuários</h5>
 		</td>
 		<td>
 			<!-- <img src="img/Utilitários.png" alt="Utilitários"> -->
 			<!-- <p>Encontre utilitários clicando no botão abaixo</p> -->
-			<a href="addFunc.php"><button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#Passeio">Adicionar</button></a>
-			<a href="edtFunc.php"><button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="#Passeio">Editar</button></a>
+			<a href="addUser.php"><button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#Passeio">Adicionar</button></a>
+			<a href="edtUser.php"><button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="#Passeio">Editar</button></a>
 		</td>
 	</tr>
 
 <!--- Card 3 ------------------------ -->
-	<tr>
+	<!-- <tr>
 		<td>
 			<h5>Clientes</h5>
 		</td>
 		<td>
-			<!-- <img src="img/Vans.jpg" alt="Vans"> -->
-			<!-- <p>Encontre Vans clicando no botão abaixo</p> -->
+			<!-- <img src="img/Vans.jpg" alt="Vans"> --
+			<!-- <p>Encontre Vans clicando no botão abaixo</p> --
 			<a href="addClient.php"><button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#Passeio">Adicionar</button></a>
 			<a href="edtClient.php"><button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="#Passeio">Editar</button></a>
 		</td>
-	</tr>
+	</tr> -->
 	
 </table>
 <!-- </div> --> <!-- card-sub-layer-1 -->
