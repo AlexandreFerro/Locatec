@@ -1,6 +1,14 @@
-CREATE DATABASE LOCATEC_APL;
+#CREATE DATABASE LOCATEC;
 
-USE LOCATEC_APL;
+USE LOCATEC;
+
+create table USER_TYPE(
+	utId int PRIMARY KEY not null,
+	utDescricao varchar(14)
+		#1 - administrador
+		#2 - empregado
+		#3 - cliente
+);
 
 create table USUARIOS(
 userId int PRIMARY KEY AUTO_INCREMENT,
@@ -8,11 +16,10 @@ userCreateDate date not null,
 userFirstName varchar(60) not null,
 userLastName varchar(60) not null,
 userCPF varchar(12) not null,
-userEmail varchar(100) not all,
+userEmail varchar(100) not null,
 userLogin varchar(8) not null,
 userPass varchar(45) not null,
-userTipo int not null
-
+userTipo int(1) not null,
 	FOREIGN KEY (userTipo) REFERENCES USER_TYPE(utId)
 );
 
@@ -32,12 +39,4 @@ vcDocNum varchar(20) not null,
 vcDocVenc date not null,
 vcPlaca varchar(8) not null,
 vcValor float not null
-);
-
-create table USER_TYPE(
-	utId int PRIMARY KEY not null,
-	utDescricao varchar(14)
-		/*administrador
-		--empregado
-		--cliente*/
 );
