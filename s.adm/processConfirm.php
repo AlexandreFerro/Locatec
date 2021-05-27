@@ -33,7 +33,8 @@
 //"delete from usuarios" 
 	//(apaga todos os registros da tabela) - Apos testes...
 
-	$data = date("y/m/d");
+	$data = date("Y/m/d");
+	$userType = $_POST['userType'];
 	$nome = $_POST['userFirstName'];
 	$sobrenome = $_POST['userLastName'];
 	$cpf = $_POST['userCPF'];
@@ -46,23 +47,36 @@
 $strcon = mysqli_connect('127.0.0.1','root','','locatec') 
     or die('Erro ao conectar ao banco de dados');
 
-$sql = "SELECT userId, userLogin, userCPF, userEmail FROM usuarios"; //Query não está conectando
+$sql = "INSERT INTO usuarios VALUES ";
+$sql .= "('','$data','$nome','$sobrenome','$cpf','$email','$login','$senha','$userType')";
+//$sql = "SELECT userId, userLogin, userCPF, userEmail FROM usuarios"; //Query não está conectando
 
+//$result = mysqli_query($strcon,$sql);
+	//or die("Erro ao tentar cadastrar registro");
+//mysqli_close($strcon);
 
-$result = mysqli_query($strcon,$sql);
-//or die("Erro ao tentar cadastrar registro");
-mysqli_close($strcon);
+///////////////////////////////////////////////////////
+/*$strcon = mysqli_connect('localhost','root','','locatec') 
+    or die('Erro ao conectar ao banco de dados');
+$sql = "INSERT INTO usuarios VALUES ";
+$sql .= "('$nome', '$sobrenome', '$email', '$senha')";
+*/
+mysqli_query($strcon,$sql)
+	or die("Erro ao tentar cadastrar registro. Contate seu suporte."
+		.mysqli_close($strcon)
+		);
+///////////////////////////////////////////////////////
 
+// $row = mysqli_fetch_array($result);
 
-$row = mysqli_fetch_array($result);
 
 //=============================== EM ANALISE
-$test = print_r($row);
+/*$test = print_r($row);
 echo "<div style='font-size=8px;'>$test</div>";
-
-
-die();
-
+*/
+// echo "parou aqui para fins de teste";
+// die();
+/*
 if($login == isset($row['userLogin'])){
 	echo "<br> Usuário já existe, tente outro usuário... <br>";
 	echo "usuário digitado: ".$login;
@@ -73,7 +87,7 @@ if($login == isset($row['userLogin'])){
 	$sqlin = "INSERT INTO usuarios VALUES ";
 	$sqlin .= "('','$data','$nome', '$sobrenome', '$cpf', '$email', '$login', '$senha')";
 }
-
+*/
 
 echo "Cadastrado com sucesso!"."<br> - ".$data;
 //	} // ELSE -- FIM
@@ -86,7 +100,7 @@ echo "Cadastrado com sucesso!"."<br> - ".$data;
 <br>
 <br>
 <br>
-   <a href="cadastro.html">Retornar</a>
+   <a href="addUser.php">Retornar</a>
 <br>
 Retornando a página anterior...
 <br>
