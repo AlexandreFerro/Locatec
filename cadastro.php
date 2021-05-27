@@ -38,16 +38,21 @@
 	$email = $_POST['cadEmail'];
 	$senha = sha1($_POST['cadSenha']);
 
-//===================== Cria a string de conexão $strcon
+	//echo "$nome <br>, $sobrenome <br>, $email <br>, $senha <br><br><br>";
 
-$strcon = mysqli_connect('127.0.0.1','root','','locatec') 
+//===================== Cria a string de conexão $strcon
+//$mysqli = new mysqli('localhost','root','','testing')
+//if($mysqli -> connect_errno)
+
+$strcon = mysqli_connect('localhost','root','','locatec') 
     or die('Erro ao conectar ao banco de dados');
 $sql = "INSERT INTO usuarios VALUES ";
 $sql .= "('$nome', '$sobrenome', '$email', '$senha')";
 
 mysqli_query($strcon,$sql)
-	or die("Erro ao tentar cadastrar registro");
-mysqli_close($strcon);
+	or die("Erro ao tentar cadastrar registro. Contate seu suporte."
+		.mysqli_close($strcon)
+		);
 
 echo "Cadastrado com sucesso!";
 //	} // ELSE -- FIM
