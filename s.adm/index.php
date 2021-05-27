@@ -10,7 +10,7 @@
 <link rel="icon" href="http://localhost/img/favicon/fav5.jpg" type="image/jpg" sizes="32x32">
 
 <!-- [Sidnei] SINCRONIZA A PAGINA A CADA 30 segundos -->
-<meta http-equiv="refresh" content="5">
+<!-- <meta http-equiv="refresh" content="5"> -->
 
 
 <!------------------------------------------------ Bootstrap CSS -->
@@ -24,7 +24,7 @@
 <body> <!----------------------------------- INICIO CORPO DO SITE -->
 <div class="container-fluid">
   <h1>
-    <b><a href="http://localhost">Locatec</a></b>
+    <b><a href="../index.html">Locatec</a></b>
   </h1>
 </div>
 
@@ -36,13 +36,13 @@
 			<a href="#tab1" data-toggle="collapse" data-target="#tabn">Locação</a>
 		</li>
         <li>
-			<a href="http://localhost/Frotas.html">Frotas</a>
+			<a href="../Frotas.html">Frotas</a>
 		</li>
         <li>
-			<a href="http://localhost/cadastro.html">Clientes</a>
+			<a href="../cadastro.html">Clientes</a>
 		</li>
         <li>
-			<a href="http://localhost/locacao.html">Veículos</a>
+			<a href="../locacao.html">Veículos</a>
 		</li>
 		
 		<div class="loginButton">
