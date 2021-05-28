@@ -22,7 +22,7 @@
 <!----------------------------------- INICIO CORPO DO SITE -->
 <div class="container-fluid">
   <h1>
-    <b><a href="index.html">Locatec</a></b>
+    <b><a href="index.php">Locatec</a></b>
   </h1>
 </div> 
 
