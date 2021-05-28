@@ -8,7 +8,7 @@
 <link rel="icon" href="http://localhost/img/favicon/fav5.jpg" type="image/jpg" sizes="32x32">
     
 <!-- [Sidnei] SINCRONIZA A PAGINA A CADA 30 segundos -->
-<meta http-equiv="refresh" content="5"> 
+<!-- <meta http-equiv="refresh" content="5">  -->
 
 <!------------------------------------------------ Bootstrap CSS -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -22,7 +22,11 @@
 <!----------------------------------- INICIO CORPO DO SITE -->
 <div class="container-fluid">
   <h1>
-    <b><a href="http://localhost">Locatec</a></b>
+    <b>
+		<a href="../index.html">Locatec</a>
+	</b>
+		> <a class="breadcrumblink" href="index.php"> Home </a>
+		> <a class="breadcrumblink" href="addUser.php"> Novo usuário </a>
   </h1>
 </div>
 
@@ -34,13 +38,13 @@
 			<a href="#tab1" data-toggle="collapse" data-target="#tabn">Locação</a>
 		</li>
         <li>
-			<a href="http://localhost/Frotas.html">Frotas</a>
+			<a href="../Frotas.html">Frotas</a>
 		</li>
         <li>
-			<a href="http://localhost/cadastro.html">Clientes</a>
+			<a href="../cadastro.html">Clientes</a>
 		</li>
         <li>
-			<a href="http://localhost/locacao.html">Veículos</a>
+			<a href="../locacao.html">Veículos</a>
 		</li>
 		
 		<div class="loginButton">
@@ -124,12 +128,18 @@
 				<label><b style="color: red;">*</b> Tipo</label>
 			</td>
 			<td>
-				<select style="float: right; width: 100%;">  <--border: 1px solid red;--/>
-					<!-- <option value="-">Selecione o tipo</option> -->
-					<option value="client">Cliente</option>
-					<option value="employee">Funcionário</option>
-					<option value="amdin">Administrador</option>
-				</select>
+			<input type="radio" name="userType" value="3" required style="width:80px; background: #ddd;">
+				<label>Cliente</label><br>		
+  			<input type="radio" name="userType" value="2" required style="width:80px; background: #ddd;">
+  				<label>Funcionario</label><br>
+  			<input type="radio" name="userType" value="1" required style="width:80px; background: #ddd;">
+  				<label>Administrador</label>
+<!-- 				<select style="float: right; width: 100%;">  <--border: 1px solid red;--/>
+					!-- <option value="-">Selecione o tipo</option> --
+					<option value="3">Cliente</option>
+					<option value="2">Funcionário</option>
+					<option value="1">Administrador</option>
+				</select> -->
 			</td>
 		</tr>
         <tr>
@@ -186,38 +196,17 @@
             </td>
             <td style="float: right;">
                 <br>
+				<input type="reset"> - 
                 <input type="submit" value="Cadastrar" name="cadSubmit">
             </td>
         </tr>
     </table>
 </form>
 
-<!--
-<br>
-<a href="login.html">Já possui login? Acesse aqui.</a>
-<br>
-<br>
-<a href="index.html">Voltar a página inicial</a>
-
-
-
-
-<!------- LEMBRETE ----------- INICIO -->
-<!--
-<div style="margin-top: 140px;">
-	<h4 style="color: red;">Lembrete:</h4>
-	<h5>
-		<p>
-			Criar redirecionamento dentro do PHP,<br> 5 segundos apos cadastro redirecionar para LOGIN.html;
-		</p>
-	</h5>
-</div>
--->
-<!------- LEMBRETE ----------- FIM -->
-
 
 </div>
 </div>
+
 <!------- CONTEUDO-CORPO-SITE ----------- FIM -->
 
 </body>
