@@ -8,7 +8,7 @@
 <link rel="icon" href="http://localhost/img/favicon/fav5.jpg" type="image/jpg" sizes="32x32">
     
 <!-- [Sidnei] SINCRONIZA A PAGINA A CADA 30 segundos -->
-<!-- <meta http-equiv="refresh" content="5">  -->
+<meta http-equiv="refresh" content="5">
 
 <!------------------------------------------------ Bootstrap CSS -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -22,33 +22,37 @@
 <!----------------------------------- INICIO CORPO DO SITE -->
 <div class="container-fluid">
   <h1>
-    <b><a href="index.html">Locatec</a></b>
+    <b>
+		<a href="../index.html">Locatec</a>
+	</b>
+		> <a class="breadcrumblink" href="index.php"> Home </a>
+		> <a class="breadcrumblink" href="edtUser.php"> Editar usuário </a>
   </h1>
-</div> 
+</div>
 
 
 <!------- MENU ----------- INICIO -->
 <nav class="navMain">
-    <ul>
+    <ul> <!--  style="background: #ff9999;" -->
         <li>
 			<a href="#tab1" data-toggle="collapse" data-target="#tabn">Locação</a>
 		</li>
         <li>
-			<a href="Frotas.html">Frotas</a>
+			<a href="../Frotas.html">Frotas</a>
 		</li>
         <li>
-			<a href="cadastro.html">Clientes</a>
+			<a href="../cadastro.html">Clientes</a>
 		</li>
         <li>
-			<a href="locacao.html">Veículos</a>
+			<a href="../locacao.html">Veículos</a>
 		</li>
 		
 		<div class="loginButton">
 			<li>
-				<a href="login.html">Login</a>	<!--	LOGIN	-->
+				<a href="#login.html" class="activeMenu" style="font-weight: bold;">$userName</a>	<!--	LOGIN	-->
 			</li>
 			<li>
-				<a href="cadastro.html" class="activeMenu">Cadastrar</a>	<!--	CADASTRO	-->
+				<a href="#cadastro.html" style="font-weight: bold;">$Logoff</a>	<!--	CADASTRO	-->
 			</li>
 		</div>
     </ul>
@@ -83,7 +87,6 @@
 					<td>
 					</td>
 					<td>
-						<!--  -->
 					</td>
 					<td>
 				<label>Data/Hora Devolução </label>
@@ -105,7 +108,6 @@
 				   id="buscar" onclick="location.href='Confirmação.html'"><br>
 					</td>
 				</tr>
-				
 			</table>
 		</div>
 	</div>
@@ -117,16 +119,41 @@
 <div class="global-body-content">
 <div class="body-content-layer-1">
 
-<H1>Cadastro de cliente</H1>
+<H1>Listar/Editar usuários</H1>
 
-<form method="POST" action="cadastro.php">
+
+<br>
+<br>
+<br>
+<h4>
+<b>Lembrete: </b>
+	<br>
+	<br>
+	<p style="width:400px;margin:auto;">Aqui será trazida a lista de usuarios existentes no banco e dados basico que podem ser editados</p>
+</h4>
+
+<!-- 
+<form method="POST" action="processConfirm.php">
     <table>
+		<tr>
+			<td>
+				<label><b style="color: red;">*</b> Tipo</label>
+			</td>
+			<td>
+			<input type="radio" name="userType" value="3" required style="width:80px; background: #ddd;">
+				<label>Cliente</label><br>		
+  			<input type="radio" name="userType" value="2" required style="width:80px; background: #ddd;">
+  				<label>Funcionario</label><br>
+  			<input type="radio" name="userType" value="1" required style="width:80px; background: #ddd;">
+  				<label>Administrador</label>
+			</td>
+		</tr>
         <tr>
             <td>
                 <label><b style="color: red;">*</b> Nome</label>
             </td>
             <td>
-                <input type="text" name="cadFirstName" required autofocus><br>
+                <input type="text" name="userFirstName" required autofocus><br>
             </td>
         </tr>
         <tr>
@@ -134,7 +161,15 @@
                 <label><b style="color: red;">*</b> Sobrenome</label>
             </td>
             <td>
-                <input type="text" name="cadLastName" required><br>
+                <input type="text" name="userLastName" required><br>
+            </td>    
+        </tr>
+		<tr>
+            <td>
+                <label><b style="color: red;">*</b> CPF</label>
+            </td>
+            <td>
+                <input type="text" name="userCPF" required><br>
             </td>    
         </tr>
         <tr>
@@ -142,7 +177,15 @@
                 <label><b style="color: red;">*</b> Email</label>
             </td>
             <td>
-                <input type="email" name="cadEmail" required><br>
+                <input type="email" name="userEmail" required><br>
+            </td>    
+        </tr>
+		<tr>
+            <td>
+                <label><b style="color: red;">*</b> Login</label>
+            </td>
+            <td>
+                <input type="text" name="userLogin" required><br>
             </td>    
         </tr>
         <tr>
@@ -150,44 +193,25 @@
                 <label><b style="color: red;">*</b> Senha</label>
             </td>
             <td>
-                <input type="password" name="cadSenha" required><br>
+                <input type="password" name="userPass" required><br>
             </td>    
         </tr>
         <tr>
             <td>
-<!--                Bloco vazio -->
             </td>
             <td style="float: right;">
                 <br>
+				<input type="reset"> - 
                 <input type="submit" value="Cadastrar" name="cadSubmit">
             </td>
         </tr>
     </table>
 </form>
-
-<br>
-<a href="login.html">Já possui login? Acesse aqui.</a>
-<br>
-<br>
-<a href="index.html">Voltar a página inicial</a>
-
-
-
-
-<!------- LEMBRETE ----------- INICIO -->
-<div style="margin-top: 140px;">
-	<h4 style="color: red;">Lembrete:</h4>
-	<h5>
-		<p>
-			Criar redirecionamento dentro do PHP,<br> 5 segundos apos cadastro redirecionar para LOGIN.html;
-		</p>
-	</h5>
-</div>
-<!------- LEMBRETE ----------- FIM -->
-
+ -->
 
 </div>
 </div>
+
 <!------- CONTEUDO-CORPO-SITE ----------- FIM -->
 
 </body>
