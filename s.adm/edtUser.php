@@ -8,7 +8,7 @@
 <link rel="icon" href="http://localhost/img/favicon/fav5.jpg" type="image/jpg" sizes="32x32">
     
 <!-- [Sidnei] SINCRONIZA A PAGINA A CADA 30 segundos -->
-<meta http-equiv="refresh" content="5">
+<!-- <meta http-equiv="refresh" content="5"> -->
 
 <!------------------------------------------------ Bootstrap CSS -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -126,12 +126,54 @@
 <br>
 <br>
 <h4>
+	<!-- 
 <b>Lembrete: </b>
 	<br>
 	<br>
-	<p style="width:400px;margin:auto;">Aqui será trazida a lista de usuarios existentes no banco e dados basico que podem ser editados</p>
+		<p style="width:400px;margin:auto;">Aqui será trazida a lista de usuarios existentes no banco e dados basico que podem ser editados</p> -->
 </h4>
 
+<?php
+$strcon = mysqli_connect('localhost','root','','locatec') 
+    or die('Erro ao conectar ao banco de dados');
+
+$sql = "select * from usuarios";
+// $sql .= "('','$data','$nome','$sobrenome','$cpf','$email','$login','$senha','$userType')";
+
+//$result = mysqli_query($strcon,$sql);
+	//or die("Erro ao tentar cadastrar registro");
+//mysqli_close($strcon);
+echo "<br>";
+$result = mysqli_query($strcon,$sql);
+// echo [$result];
+//////////////////////////////////////////////////////////////
+if ($result->num_rows > 0) {
+	// output data of each row
+	while($row = $result->fetch_assoc()) {
+	  echo 
+	  "ID: ".$row["userId"].
+	  " - NOME: " . $row["userFirstName"].
+	  " - SOBRENOME: ". $row["userLastName"].
+	  "<br>";
+	}
+  } else {
+	echo "0 results (Seu banco de dados está em branco...)";
+  }
+  $strcon->close();
+
+/*
+while($row = mysqli_fetch_array($result)) {
+    echo $row['userEmail']; // Print a single column data
+    echo print_r($row);       // Print the entire row data
+}*/
+
+//////////////////////////////////////////////////////////////
+/*
+mysqli_query($strcon,$sql)
+	or die("Erro ao tentar cadastrar registro. Contate seu suporte."
+		.mysqli_close($strcon)
+		);*/
+?>
 <!-- 
 <form method="POST" action="processConfirm.php">
     <table>
