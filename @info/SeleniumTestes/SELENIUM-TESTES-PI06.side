@@ -1,0 +1,429 @@
+{
+  "id": "900491db-e2bc-4c56-a652-d17f8be675a3",
+  "version": "2.0",
+  "name": "PI06",
+  "url": "http://localhost:82",
+  "tests": [{
+    "id": "53ed5513-ae28-4d19-a75b-691b9eca7dc5",
+    "name": "03-NAVEGACAO-LINKS",
+    "commands": [{
+      "id": "564b77db-d65a-42ab-8fd5-d79246788e54",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f627303c-c122-48a6-9c13-e3514b749aa9",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "869x608",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e754fce8-1d11-421a-a936-45257cf1d60b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Locatec",
+      "targets": [
+        ["linkText=Locatec", "linkText"],
+        ["css=b > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Locatec')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'index.html')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Locatec')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "93da2db2-a5ff-41e9-a748-9b4d09a85ca3",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Frotas",
+      "targets": [
+        ["linkText=Frotas", "linkText"],
+        ["css=ul > li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Frotas')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'Frotas.html')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Frotas')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0504e9c7-c1fd-40ce-88f5-935b7db69595",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Clientes",
+      "targets": [
+        ["linkText=Clientes", "linkText"],
+        ["css=li:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Clientes')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'cadastro.html')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Clientes')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "11923aaf-63c8-4572-825a-f3b485f271db",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Veículos",
+      "targets": [
+        ["linkText=Veículos", "linkText"],
+        ["css=li:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Veículos')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'locacao.html')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Veículos')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b503b93e-72a8-488f-a252-372715bddf60",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Login",
+      "targets": [
+        ["linkText=Login", "linkText"],
+        ["css=.loginButton > li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Login')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'login.html')]", "xpath:href"],
+        ["xpath=//div/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "161569c6-da75-44ed-a533-fdceb5f07be9",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Cadastrar",
+      "targets": [
+        ["linkText=Cadastrar", "linkText"],
+        ["css=.loginButton > li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Cadastrar')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, 'cadastro.html')])[2]", "xpath:href"],
+        ["xpath=//div/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Cadastrar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "56ad59ab-0cf3-4583-9820-2fae65067dc7",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Já possui login? Acesse aqui.",
+      "targets": [
+        ["linkText=Já possui login? Acesse aqui.", "linkText"],
+        ["css=a:nth-child(4)", "css:finder"],
+        ["xpath=//a[contains(text(),'Já possui login? Acesse aqui.')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, 'login.html')])[2]", "xpath:href"],
+        ["xpath=//div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Já possui login? Acesse aqui.')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "48f46725-8d74-4fc3-b3b1-ec3f11119975",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Não possui login? Cadastre-se aqui.",
+      "targets": [
+        ["linkText=Não possui login? Cadastre-se aqui.", "linkText"],
+        ["css=a:nth-child(4)", "css:finder"],
+        ["xpath=//a[contains(text(),'Não possui login? Cadastre-se aqui.')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, 'cadastro.html')])[3]", "xpath:href"],
+        ["xpath=//div[4]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Não possui login? Cadastre-se aqui.')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2cbd2b47-22bc-4660-960d-b3a2ef6960b1",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Voltar a página inicial",
+      "targets": [
+        ["linkText=Voltar a página inicial", "linkText"],
+        ["css=a:nth-child(7)", "css:finder"],
+        ["xpath=//a[contains(text(),'Voltar a página inicial')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, 'index.html')])[2]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Voltar a página inicial')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "2bf42b8c-0444-40b1-9dd6-aaea7aaeed7e",
+    "name": "02-CARGA-EXTRESSE-REQ.RESP",
+    "commands": [{
+      "id": "8ac1a2bc-75a4-4cd1-ae3f-036b4863af01",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "55d55e80-4628-47cc-b906-c7e4d038cb52",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "869x608",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b27311b5-a295-441d-b797-88850eada42b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Locatec",
+      "targets": [
+        ["linkText=Locatec", "linkText"],
+        ["css=b > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Locatec')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'index.html')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Locatec')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9c3ecfc6-ed88-4080-844f-2524bcbc9732",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Locatec",
+      "targets": [
+        ["linkText=Locatec", "linkText"],
+        ["css=b > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Locatec')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'index.html')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Locatec')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2a92fc60-fe43-425e-91e7-a686fb9f792b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Locatec",
+      "targets": [
+        ["linkText=Locatec", "linkText"],
+        ["css=b > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Locatec')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'index.html')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Locatec')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c2e2833c-4350-4569-b1e7-17b70782b842",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Locatec",
+      "targets": [
+        ["linkText=Locatec", "linkText"],
+        ["css=b > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Locatec')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'index.html')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Locatec')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6febf007-1ed5-46bd-bd4b-8e0e9913f58c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Locatec",
+      "targets": [
+        ["linkText=Locatec", "linkText"],
+        ["css=b > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Locatec')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'index.html')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Locatec')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2110e15c-856f-4fea-a5b6-f03280094545",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Locatec",
+      "targets": [
+        ["linkText=Locatec", "linkText"],
+        ["css=b > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Locatec')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'index.html')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Locatec')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4057029b-3a5a-499d-9b83-6dce54a5f37b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Locatec",
+      "targets": [
+        ["linkText=Locatec", "linkText"],
+        ["css=b > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Locatec')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'index.html')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Locatec')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "28e45f0c-7df1-4d66-8fc1-80937fabc388",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Locatec",
+      "targets": [
+        ["linkText=Locatec", "linkText"],
+        ["css=b > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Locatec')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'index.html')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Locatec')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6c42c992-5bc5-48fe-a9a9-f7a622f129a0",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Locatec",
+      "targets": [
+        ["linkText=Locatec", "linkText"],
+        ["css=b > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Locatec')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'index.html')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Locatec')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "7ff3c2e9-a7be-4910-9d0f-1cc3cb630e9c",
+    "name": "01-ACESSO-AS-PAGINAS",
+    "commands": [{
+      "id": "a10b25a3-6b2a-44f4-b82f-c9a03bddd16d",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d98fd025-697e-4550-a789-63eabeefe09c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "869x608",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4dc32364-b98f-4667-93df-7ed16259654f",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Login",
+      "targets": [
+        ["linkText=Login", "linkText"],
+        ["css=.loginButton > li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Login')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'login.html')]", "xpath:href"],
+        ["xpath=//div/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5b4a4497-563b-4aa4-ac5c-73338618d996",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Cadastrar",
+      "targets": [
+        ["linkText=Cadastrar", "linkText"],
+        ["css=.loginButton > li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Cadastrar')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, 'cadastro.html')])[2]", "xpath:href"],
+        ["xpath=//div/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Cadastrar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f9e1ff4c-101c-4a91-b5bf-2f647e848e30",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Frotas",
+      "targets": [
+        ["linkText=Frotas", "linkText"],
+        ["css=ul > li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Frotas')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'Frotas.html')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Frotas')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5f6fb80a-272d-4985-9af8-4bec73126dc8",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Veículos",
+      "targets": [
+        ["linkText=Veículos", "linkText"],
+        ["css=li:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Veículos')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'locacao.html')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Veículos')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a0834879-05dd-4bf6-a8ed-56ddac9d97dd",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Clientes",
+      "targets": [
+        ["linkText=Clientes", "linkText"],
+        ["css=li:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Clientes')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'cadastro.html')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Clientes')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4963c465-18b7-4636-bac7-37e9c2bda96f",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Locação",
+      "targets": [
+        ["linkText=Locação", "linkText"],
+        ["css=ul > li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Locação')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '#tab1')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Locação')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "42903203-722a-4095-a239-49cd036fca53",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Locatec",
+      "targets": [
+        ["linkText=Locatec", "linkText"],
+        ["css=b > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Locatec')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'index.html')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Locatec')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "c330659e-bef1-40f5-8457-a77891833eed",
+    "name": "04-LOGIN",
+    "commands": []
+  }, {
+    "id": "4f36f6bb-a8f9-461d-a2e5-989620550c87",
+    "name": "05-TESTE-CRUD",
+    "commands": []
+  }],
+  "suites": [{
+    "id": "785a4134-c174-490f-baa2-9c2fc2358075",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["53ed5513-ae28-4d19-a75b-691b9eca7dc5"]
+  }],
+  "urls": ["http://localhost:82/"],
+  "plugins": []
+}
