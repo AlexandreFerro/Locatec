@@ -1,21 +1,20 @@
 <html>
 <head>
 	<title>Locatec | Cadastro</title>
-    
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="css/main.css">
-<link rel="icon" href="http://localhost/img/favicon/fav5.jpg" type="image/jpg" sizes="32x32">
-    
-<!-- [Sidnei] SINCRONIZA A PAGINA A CADA 30 segundos -->
-<!-- <meta http-equiv="refresh" content="5"> -->
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="icon" href="http://localhost/img/favicon/fav5.jpg" type="image/jpg" sizes="32x32">
+	
+	<!-- [Sidnei] SINCRONIZA A PAGINA A CADA 30 segundos -->
+	<meta http-equiv="refresh" content="5">
 
-<!------------------------------------------------ Bootstrap CSS -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-
+	<!------------------------------------------------ Bootstrap CSS -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
 </head>
 <body>
@@ -58,8 +57,7 @@
     </ul>
 </nav>
 <!------- MENU ----------- FIM -->
-	
-	
+
 
 <!------- SUB-MENU 01 ----------- INICIO -->
 
@@ -121,16 +119,15 @@
 
 <H1>Listar/Editar usuários</H1>
 
-
 <br>
 <br>
 <br>
 <h4>
-	<!-- 
-<b>Lembrete: </b>
-	<br>
-	<br>
-		<p style="width:400px;margin:auto;">Aqui será trazida a lista de usuarios existentes no banco e dados basico que podem ser editados</p> -->
+		<!-- 
+	<b>Lembrete: </b>
+		<br>
+		<br>
+			<p style="width:400px;margin:auto;">Aqui será trazida a lista de usuarios existentes no banco e dados basico que podem ser editados</p> -->
 </h4>
 
 <?php
@@ -145,111 +142,39 @@ $sql = "select * from usuarios";
 //mysqli_close($strcon);
 echo "<br>";
 $result = mysqli_query($strcon,$sql);
-// echo [$result];
-//////////////////////////////////////////////////////////////
-if ($result->num_rows > 0) {
-	// output data of each row
-	while($row = $result->fetch_assoc()) {
-	  echo 
-	  "ID: ".$row["userId"].
-	  " - NOME: " . $row["userFirstName"].
-	  " - SOBRENOME: ". $row["userLastName"].
-	  "<br>";
+	// echo [$result]; //Não traz os resultados de forma legivel
+	//////////////////////////////////////////////////////////////
+	if ($result->num_rows > 0) {
+		// output data of each row
+		while($row = $result->fetch_assoc()) {
+			echo 
+				"ID: ".$row["userId"].
+				" - NOME: ".$row["userFirstName"].
+				" - SOBRENOME: ".$row["userLastName"].
+				"<br>";
+		}
+	} else {
+		echo "0 results (Seu banco de dados está em branco...)";
 	}
-  } else {
-	echo "0 results (Seu banco de dados está em branco...)";
-  }
-  $strcon->close();
-
-/*
-while($row = mysqli_fetch_array($result)) {
-    echo $row['userEmail']; // Print a single column data
-    echo print_r($row);       // Print the entire row data
-}*/
-
-//////////////////////////////////////////////////////////////
-/*
-mysqli_query($strcon,$sql)
-	or die("Erro ao tentar cadastrar registro. Contate seu suporte."
-		.mysqli_close($strcon)
-		);*/
+$strcon->close();
 ?>
-<!-- 
-<form method="POST" action="processConfirm.php">
-    <table>
-		<tr>
-			<td>
-				<label><b style="color: red;">*</b> Tipo</label>
-			</td>
-			<td>
-			<input type="radio" name="userType" value="3" required style="width:80px; background: #ddd;">
-				<label>Cliente</label><br>		
-  			<input type="radio" name="userType" value="2" required style="width:80px; background: #ddd;">
-  				<label>Funcionario</label><br>
-  			<input type="radio" name="userType" value="1" required style="width:80px; background: #ddd;">
-  				<label>Administrador</label>
-			</td>
-		</tr>
-        <tr>
-            <td>
-                <label><b style="color: red;">*</b> Nome</label>
-            </td>
-            <td>
-                <input type="text" name="userFirstName" required autofocus><br>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <label><b style="color: red;">*</b> Sobrenome</label>
-            </td>
-            <td>
-                <input type="text" name="userLastName" required><br>
-            </td>    
-        </tr>
-		<tr>
-            <td>
-                <label><b style="color: red;">*</b> CPF</label>
-            </td>
-            <td>
-                <input type="text" name="userCPF" required><br>
-            </td>    
-        </tr>
-        <tr>
-            <td>
-                <label><b style="color: red;">*</b> Email</label>
-            </td>
-            <td>
-                <input type="email" name="userEmail" required><br>
-            </td>    
-        </tr>
-		<tr>
-            <td>
-                <label><b style="color: red;">*</b> Login</label>
-            </td>
-            <td>
-                <input type="text" name="userLogin" required><br>
-            </td>    
-        </tr>
-        <tr>
-            <td>
-                <label><b style="color: red;">*</b> Senha</label>
-            </td>
-            <td>
-                <input type="password" name="userPass" required><br>
-            </td>    
-        </tr>
-        <tr>
-            <td>
-            </td>
-            <td style="float: right;">
-                <br>
-				<input type="reset"> - 
-                <input type="submit" value="Cadastrar" name="cadSubmit">
-            </td>
-        </tr>
-    </table>
-</form>
- -->
+
+
+<?php
+	/*
+	while($row = mysqli_fetch_array($result)) {
+	    echo $row['userEmail']; // Print a single column data
+	    echo print_r($row);       // Print the entire row data
+	}*/
+
+	//////////////////////////////////////////////////////////////
+	/*
+	mysqli_query($strcon,$sql)
+		or die("Erro ao tentar cadastrar registro. Contate seu suporte."
+			.mysqli_close($strcon)
+			);*/
+?>
+
 
 </div>
 </div>
