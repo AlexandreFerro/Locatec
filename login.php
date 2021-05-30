@@ -5,7 +5,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel = "stylesheet" href = "css/style.css">
-<link rel="icon" href="http://localhost/img/favicon/fav5.jpg" type="image/jpg" sizes="32x32">
+<link rel="icon" href="../img/favicon/fav5.jpg" type="image/jpg" sizes="32x32">
 
 <!--Google fonts-->
 <!--    <link rel="preconnect" href="https://fonts.gstatic.com">-->
@@ -61,15 +61,23 @@ $con = mysqli_connect("localhost","root","","locatec"); //IP(hostname) - User - 
 	//------------ PARA FINS DE TESTE E VALIDACAO DA QUERY -------------- FIM
 
 $result = mysqli_query($con,"select * from usuarios where userEmail = '$email' and userPass = '$senha'") 
-				or die("Erro na query solicitada; 
-					<br>ERROR.MSG: "); // .mysqli_error($result));
+				or die("Erro, verifique os dados digitados;
+						<br>
+						Caso persista contate o suporte.
+						<br>
+						<br>
+						<a href='#'>suporte@locatec.com.br</a>
+						<br><br>
+   						<a href='login.html'>Retornar</a>
+						<br>
+					");
+					//<br>ERROR.MSG: "); // .mysqli_error($result));
 
 	//------------ PARA FINS DE TESTE E VALIDACAO DA QUERY -------------- INICIO
 		// echo "depois da query - OK <br>";
 	//------------ PARA FINS DE TESTE E VALIDACAO DA QUERY -------------- FIM
-
-//================================= Dados trazidos pela conexao acima
-$row = mysqli_fetch_array($result);
+	//================================= Dados trazidos pela conexao acima
+	$row = mysqli_fetch_array($result);
 
 
 		// TESTA SE OS DADOS ESTAO EM BRANCO (do HTML para o PHP)
@@ -82,7 +90,7 @@ if (is_null($email) || is_null($senha))
 	echo ("<br> Usuario e senha em branco...");
 	
 	//------------ PARA FINS DE TESTE E VALIDACAO DO LOGIN -------------- INICIO
-		//echo "<br><br> <b>dados digitados</b> (email: $email <b> || </b> senha: $senha) <br>";
+		echo "<br><br> <b>dados digitados</b> (email: $email <b> || </b> senha: $senha) <br>";
 	//------------ PARA FINS DE TESTE E VALIDACAO DO LOGIN -------------- FIM
 }
 else
@@ -94,7 +102,7 @@ else
 	
 	}else{
 		// TESTA SE O EMAIL EXISTE NO BANCO
-		if (isset($row['email']) == $email) //Testa se email digitado existe no DB através da query
+		if (isset($row['userEmail']) == $email) //Testa se email digitado existe no DB através da query
 		{
 			// -----------------------------------------
 			if($senha == null) //Testa se a senha está em branco
@@ -102,7 +110,7 @@ else
 				die("<br> Senha não preenchida");
 			}else{
 				
-				if(isset($row['senha']) == $senha) //Testa se a "HASH DA SENHA" digitada existe no DB através da query
+				if(isset($row['userPass']) == $senha) //Testa se a "HASH DA SENHA" digitada existe no DB através da query
 				{
 					die('<br> <b>Conectado com sucesso!</b> 
 					<br> Redirecionando... 
@@ -121,12 +129,12 @@ else
 			
 			//------------ PARA FINS DE TESTE E VALIDACAO DO LOGIN -------------- INICIO
 			
-				//echo "<br><br> senha trazida do banco: ".isset($row['senha']);
-				//echo "<br><br> <b>Senha digitada (já embaralhada -MD5) :</b> $senha";
+				// echo "<br><br> senha trazida do banco: ".isset($row['userPass']);
+				// echo "<br><br> <b>Senha digitada (já embaralhada -MD5) :</b> $senha";
 						//<br><b>Senha+MD5:</b> " .md5($senha);
 			
-						//echo "<br> Login digitado: $email";
-						//echo "<br> Senha digitada: $senha";
+						// echo "<br> Login digitado: $email <br>";
+						// echo "<br> Senha digitada: $senha";
 			
 			//------------ PARA FINS DE TESTE E VALIDACAO DO LOGIN -------------- FIM
 			
@@ -136,7 +144,6 @@ else
 		} //ELSE senha INCORRETA - FIM
 	} //ELSE senha em branco - FIM
 } // FIM ELSE 01
-
 
 ?>
 <!-- ---------------------------------------------- FIM PHP -->
