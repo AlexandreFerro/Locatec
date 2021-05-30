@@ -33,10 +33,19 @@
 //"delete from usuarios" 
 	//(apaga todos os registros da tabela) - Apos testes...
 
-	$nome = $_POST['cadFirstName'];
+	/*$nome = $_POST['cadFirstName'];
 	$sobrenome = $_POST['cadLastName'];
 	$email = $_POST['cadEmail'];
-	$senha = sha1($_POST['cadSenha']);
+	$senha = sha1($_POST['cadSenha']);*/
+
+	$data = date("Y/m/d");
+	// $userType = $_POST['userType'];
+	$nome = $_POST['userFirstName'];
+	$sobrenome = $_POST['userLastName'];
+	$cpf = $_POST['userCPF'];
+	$email = $_POST['userEmail'];
+	// $login = $_POST['userLogin'];
+	$senha = sha1($_POST['userPass']);
 
 	//echo "$nome <br>, $sobrenome <br>, $email <br>, $senha <br><br><br>";
 
@@ -47,7 +56,8 @@
 $strcon = mysqli_connect('localhost','root','','locatec') 
     or die('Erro ao conectar ao banco de dados');
 $sql = "INSERT INTO usuarios VALUES ";
-$sql .= "('$nome', '$sobrenome', '$email', '$senha')";
+// $sql .= "('$nome', '$sobrenome', '$email', '$senha')";
+$sql .= "('','$data','$nome','$sobrenome','$cpf','$email','webCad','$senha','1')";
 
 mysqli_query($strcon,$sql)
 	or die("Erro ao tentar cadastrar registro. Contate seu suporte."
