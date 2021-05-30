@@ -1,7 +1,7 @@
 #CREATE DATABASE LOCATEC;
 
 USE LOCATEC;
-
+#================================ TIPO DE CADASTRO + INSERTS OBRIGATORIOS
 create table USER_TYPE(
 	utId int PRIMARY KEY not null,
 	utDescricao varchar(14)
@@ -9,7 +9,11 @@ create table USER_TYPE(
 		#2 - empregado
 		#3 - cliente
 );
+insert into user_type values(1,'Administrador');
+insert into user_type values(2,'Funcionario');
+insert into user_type values(3,'Cliente');
 
+#================================ TABELA PARA REGISTRO DE CADASTROS (USUARIOS)
 create table USUARIOS(
 userId int PRIMARY KEY AUTO_INCREMENT,
 userCreateDate date not null,
@@ -23,6 +27,7 @@ userTipo int(1) not null,
 	FOREIGN KEY (userTipo) REFERENCES USER_TYPE(utId)
 );
 
+#================================ TABELA PARA REGISTRO DE CADASTROS (VEICULOS)
 create table VEICULOS(
 vcId int PRIMARY KEY AUTO_INCREMENT,
 vcCreateDate varchar(20) not null,
