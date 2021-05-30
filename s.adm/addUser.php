@@ -2,26 +2,26 @@
 <head>
 	<title>Locatec | Cadastro</title>
     
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="css/main.css">
-<link rel="icon" href="http://localhost/img/favicon/fav5.jpg" type="image/jpg" sizes="32x32">
-    
-<!-- [Sidnei] SINCRONIZA A PAGINA A CADA 30 segundos -->
-<!-- <meta http-equiv="refresh" content="5">  -->
-
-<!------------------------------------------------ Bootstrap CSS -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="icon" href="../img/favicon/fav5.jpg" type="image/jpg" sizes="32x32">
+	
+	<!-- [Sidnei] SINCRONIZA A PAGINA A CADA 30 segundos -->
+	<!-- <meta http-equiv="refresh" content="5">  -->
+	
+	<!------------------------------------------------ Bootstrap CSS -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
 
 </head>
 <body>
 <!----------------------------------- INICIO CORPO DO SITE -->
-<div class="container-fluid">
-  <h1>
+<h1>
+	<div class="container-fluid">
     <b>
 		<a href="../index.html">Locatec</a>
 	</b>
@@ -58,8 +58,7 @@
     </ul>
 </nav>
 <!------- MENU ----------- FIM -->
-	
-	
+
 
 <!------- SUB-MENU 01 ----------- INICIO -->
 
@@ -128,18 +127,12 @@
 				<label><b style="color: red;">*</b> Tipo</label>
 			</td>
 			<td>
-			<input type="radio" name="userType" value="3" required style="width:80px; background: #ddd;">
-				<label>Cliente</label><br>		
-  			<input type="radio" name="userType" value="2" required style="width:80px; background: #ddd;">
-  				<label>Funcionario</label><br>
-  			<input type="radio" name="userType" value="1" required style="width:80px; background: #ddd;">
-  				<label>Administrador</label>
-<!-- 				<select style="float: right; width: 100%;">  <--border: 1px solid red;--/>
-					!-- <option value="-">Selecione o tipo</option> --
-					<option value="3">Cliente</option>
-					<option value="2">Funcionário</option>
-					<option value="1">Administrador</option>
-				</select> -->
+				<input type="radio" name="userType" value="3" required style="width:80px; background: #ddd;">
+					<label>Cliente</label><br>		
+  				<input type="radio" name="userType" value="2" required style="width:80px; background: #ddd;">
+  					<label>Funcionario</label><br>
+  				<input type="radio" name="userType" value="1" required style="width:80px; background: #ddd;">
+  					<label>Administrador</label>
 			</td>
 		</tr>
         <tr>

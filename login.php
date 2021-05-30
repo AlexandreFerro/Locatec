@@ -1,24 +1,20 @@
 <html>
 <head>
-<title>Locatec | Login</title>
-    
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel = "stylesheet" href = "css/style.css">
-<link rel="icon" href="../img/favicon/fav5.jpg" type="image/jpg" sizes="32x32">
+	<title>Locatec | Login</title>
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel = "stylesheet" href = "css/style.css">
+	<link rel="icon" href="../img/favicon/fav5.jpg" type="image/jpg" sizes="32x32">
+	
+	<!-- [Sidnei] SINCRONIZA A PAGINA A CADA 30 segundos -->
+	<!-- <meta http-equiv="refresh" content="7"; url="./login.html"/> -->
 
-<!--Google fonts-->
-<!--    <link rel="preconnect" href="https://fonts.gstatic.com">-->
-<!--    <link href="https://fonts.googleapis.com/css2?family=Pompiere&display=swap" rel="stylesheet">  -->
-    
-<!-- [Sidnei] SINCRONIZA A PAGINA A CADA 30 segundos -->
-<!--<meta http-equiv="refresh" content="10"; url="cadastro.html"/>-->
-
-<!-- ---------------------------------------------- Bootstrap CSS -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<!-- ---------------------------------------------- Bootstrap CSS -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
  
 </head>
 <body>
@@ -60,17 +56,22 @@ $con = mysqli_connect("localhost","root","","locatec"); //IP(hostname) - User - 
 		// echo "antes da query - OK <br>";
 	//------------ PARA FINS DE TESTE E VALIDACAO DA QUERY -------------- FIM
 
-$result = mysqli_query($con,"select * from usuarios where userEmail = '$email' and userPass = '$senha'") 
-				or die("Erro, verifique os dados digitados;
-						<br>
-						Caso persista contate o suporte.
-						<br>
-						<br>
-						<a href='#'>suporte@locatec.com.br</a>
-						<br><br>
-   						<a href='login.html'>Retornar</a>
-						<br>
-					");
+$result = mysqli_query($con,"select * 
+							from usuarios 
+							where userEmail = '$email' 
+							and userPass = '$senha'"
+						) 
+						or die("Erro, verifique os dados digitados;
+								<br>
+									Caso persista contate o suporte.
+								<br>
+								<br>
+									<a href='#'>suporte@locatec.com.br</a>
+								<br>
+								<br>
+   									<a href='login.html'>Retornar</a>
+								<br>"
+							);
 					//<br>ERROR.MSG: "); // .mysqli_error($result));
 
 	//------------ PARA FINS DE TESTE E VALIDACAO DA QUERY -------------- INICIO
@@ -90,7 +91,7 @@ if (is_null($email) || is_null($senha))
 	echo ("<br> Usuario e senha em branco...");
 	
 	//------------ PARA FINS DE TESTE E VALIDACAO DO LOGIN -------------- INICIO
-		echo "<br><br> <b>dados digitados</b> (email: $email <b> || </b> senha: $senha) <br>";
+		// echo "<br><br> <b>dados digitados</b> (email: $email <b> || </b> senha: $senha) <br>";
 	//------------ PARA FINS DE TESTE E VALIDACAO DO LOGIN -------------- FIM
 }
 else
@@ -113,9 +114,17 @@ else
 				if(isset($row['userPass']) == $senha) //Testa se a "HASH DA SENHA" digitada existe no DB através da query
 				{
 					die('<br> <b>Conectado com sucesso!</b> 
-					<br> Redirecionando... 
-					<br><span style="color: red;">(pendente de desenvolvimento | auto redir em 5 segundos)</span>
-					<a href="login.html"> -- Retornar</a>'
+						<br> Redirecionando...
+
+						<br>
+						<span style="color: red;">
+							(pendente de desenvolvimento | auto redir em 5 segundos)
+						</span>
+						<br>
+						<br>
+						<a href="login.html">
+							-- Retornar
+						</a>'
 					);
 					/* set_time_limit(5);
 					header("Location: cadastro.html");// localhost/ */
@@ -147,7 +156,9 @@ else
 
 ?>
 <!-- ---------------------------------------------- FIM PHP -->
-
+<script>
+	window.location.href='./login.html';
+</script>
 
 <!--</h1>-->
 <br><br>
