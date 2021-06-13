@@ -119,6 +119,30 @@ form{
 	padding: 0px 6px;
 	border-radius: 2px;
 }
+
+.inputAddUser{
+	line-height: 1em;
+	margin: auto;
+}
+
+.inputAddUser input{
+	/* background: #ddd; */
+	/* border: 1px #000 dashed; */
+	padding-right: 100px;
+	width: 50px;
+	display: inline-block;
+}
+
+.tblEdtUsr tr{
+	line-height: 1px;
+}
+
+.tblEdtUsr td{
+	display: inline-block;
+	min-width: 150px;
+	width: 100%;
+}
+
 /* --------------------------- CORPO PAGINA --------------------------- FIM -- */
 
 

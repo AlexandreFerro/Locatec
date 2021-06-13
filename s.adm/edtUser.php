@@ -8,7 +8,7 @@
 	<link rel="icon" href="http://localhost/img/favicon/fav5.jpg" type="image/jpg" sizes="32x32">
 	
 	<!-- [Sidnei] SINCRONIZA A PAGINA A CADA 30 segundos -->
-	<meta http-equiv="refresh" content="5">
+	<!-- <meta http-equiv="refresh" content="5"> -->
 
 	<!------------------------------------------------ Bootstrap CSS -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -122,6 +122,31 @@
 <br>
 <br>
 <br>
+<?php
+	echo "
+		Create - ok (add novo usuario)<br>
+		Read - ok (tela atual)<br>
+		Update - Pend...<br>
+		Delete - Pend...<br> <br>
+		";
+?>
+<table>
+	<tr>
+		<th>ID</th>
+			<td>
+				
+			</td>
+		<th>Nome</th>
+			<td></td>
+		<th>Sobrenome</th>
+			<td></td>
+	</tr>
+</table>
+
+
+<br>
+<br>
+<br>
 <h4>
 		<!-- 
 	<b>Lembrete: </b>
@@ -148,10 +173,24 @@ $result = mysqli_query($strcon,$sql);
 		// output data of each row
 		while($row = $result->fetch_assoc()) {
 			echo 
-				"ID: ".$row["userId"].
-				" - NOME: ".$row["userFirstName"].
-				" - SOBRENOME: ".$row["userLastName"].
-				"<br>";
+				'
+				<table class="tblEdtUsr">
+				<tr>
+					<th>ID</th>
+						<td>
+							'.$row["userId"].
+						'</td>
+					<th>Nome</th>
+						<td> 
+							'.$row["userFirstName"].
+						'</td>
+					<th>Sobrenome</th>
+						<td>
+							'.$row["userLastName"].
+						'</td>
+				</tr>
+				</table>
+			<br>';
 		}
 	} else {
 		echo "0 results (Seu banco de dados está em branco...)";

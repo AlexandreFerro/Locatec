@@ -126,13 +126,17 @@
 			<td>
 				<label><b style="color: red;">*</b> Tipo</label>
 			</td>
-			<td>
-				<input type="radio" name="userType" value="3" required style="width:80px; background: #ddd;">
-					<label>Cliente</label><br>		
-  				<input type="radio" name="userType" value="2" required style="width:80px; background: #ddd;">
-  					<label>Funcionario</label><br>
-  				<input type="radio" name="userType" value="1" required style="width:80px; background: #ddd;">
-  					<label>Administrador</label>
+			<td class="inputAddUser">
+				<input type="radio" name="userType" value="3" required>
+					<label>Cliente</label>
+				
+				<br>
+				<input type="radio" name="userType" value="2" required>
+  					<label>Funcionario</label>
+					  
+				<br>
+				<input type="radio" name="userType" value="1" required>
+					<label>Administrador</label>
 			</td>
 		</tr>
         <tr>
