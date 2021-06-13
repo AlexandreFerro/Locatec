@@ -116,15 +116,19 @@ else
 					die('<br> <b>Conectado com sucesso!</b> 
 						<br> Redirecionando...
 
-						<br>
+						<br><!--
 						<span style="color: red;">
 							(pendente de desenvolvimento | auto redir em 5 segundos)
-						</span>
+						</span> -->
 						<br>
 						<br>
 						<a href="login.html">
 							-- Retornar
-						</a>'
+						</a>
+						<script>
+							window.location.href="s.adm/index.php"
+						</script>;
+						'
 					);
 					/* set_time_limit(5);
 					header("Location: cadastro.html");// localhost/ */
